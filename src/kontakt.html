@@ -18,10 +18,10 @@
       <!-- START SEKTION -->
       <section>
         <article>
-          <h1>Kontakt</h1>
-          <div>
-            <p>Hejsa!</p>
-            <p>
+          <h1 class="flex justify-center text-h1_mobil">Kontakt</h1>
+          <div class="p-10">
+            <p class="text-brodtekst_mobil">Hejsa!</p>
+            <p class="text-brodtekst_mobil">
               Har du spørgsmål vedr. festivalen kan du måske finde dit svar
               herunder.
             </p>
@@ -29,39 +29,99 @@
         </article>
       </section>
       <!-- FAQ SEKTION -->
-      <section>
+      <section class="p-10 pt-0">
         <!-- SPØRGSMÅL 1 -->
         <article>
-          <div tabindex="0" class="collapse">
-            <div class="collapse-title">
-              <h3>Hvordan kan jeg blive frivillig hos på festivallen?</h3>
+          <div tabindex="0" class="collapse border-2 border-morkegron">
+            <div class="collapse-title flex">
+              <h3 class="text-h3_mobil">
+                Hvordan kan jeg blive frivillig hos på festivallen?
+              </h3>
+              <svg width="25" height="25" viewBox="0 0 24 24">
+                <path
+                  fill="#000000"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
             </div>
             <div class="collapse-content">
-              <p>tester</p>
+              <p>Bliv en del af vores seje team.</p>
+              <p>
+                Jobbet som frivillig består af 2 vagter på 3-4 timer. Der er et
+                infomøde d. 1. august 2022.
+              </p>
+              <br />
+              <p>
+                Vil du være frivillig, eller har du spørgsmål så skriv til:
+                <br />
+                <br />
+                <span class="font-bold">frivillig@vildskud.dk </span>
+              </p>
+              <br />
+              <p>Klik på linket herunder, for at læse mere</p>
+
+              <div class="flex justify-center p-2">
+                <button class="rounded-sm border-2 border-morkegron px-3">
+                  <a href="frivillig.html">Læs mere</a>
+                </button>
+              </div>
             </div>
           </div>
         </article>
         <!-- SPØRGSMÅL 2 -->
         <article>
-          <div tabindex="0" class="collapse">
-            <div class="collapse-title">
-              <h3>Hvad koster en endagsbillet?</h3>
+          <div tabindex="0" class="collapse mt-2 border-2 border-morkegron">
+            <div class="collapse-title flex justify-between">
+              <h3 class="text-h3_mobil">Hvad koster en endagsbillet?</h3>
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path
+                  fill="#000000"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
             </div>
-            <div class="collapse-content"><p>tester</p></div>
+            <div class="collapse-content">
+              <p>En endagsbillet koster: 120,- DKK</p>
+              <br />
+              <p>Få adgang til alle forestillinger til en valgfri dag.</p>
+              <div class="flex justify-center p-2">
+                <button class="rounded-sm border-2 border-morkegron px-3">
+                  <a href="frivillig.html">Læs mere</a>
+                </button>
+              </div>
+            </div>
           </div>
         </article>
         <!-- SPØRGSMÅL 3 -->
         <article>
-          <div tabindex="0" class="collapse">
-            <div class="collapse-title">
-              <h3>Hvor finder jeg et program over scenerne?</h3>
+          <div tabindex="0" class="collapse mt-2 border-2 border-morkegron">
+            <div class="collapse-title flex justify-between">
+              <h3 class="text-h3_mobil">
+                Hvor finder jeg et program over scenerne?
+              </h3>
+              <svg width="23" height="23" viewBox="0 0 24 24">
+                <path
+                  fill="#000000"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
             </div>
-            <div class="collapse-content"><p>tester</p></div>
+            <div class="collapse-content">
+              <p>
+                Find dine yndlingskunstenere og se programmet ved at klikke på
+                linket denfor
+              </p>
+              <div class="flex justify-center p-2">
+                <button class="rounded-sm border-2 border-morkegron px-3">
+                  <a href="frivillig.html">Læs mere</a>
+                </button>
+              </div>
+            </div>
           </div>
         </article>
         <article>
-          <div>
-            <p>
+          <div class="pt-10">
+            <p class="text-brodtekst_mobil">
               Hvis du ikke fandt dit svar, så skriv gerne til os i formularen
               herunder:
             </p>
@@ -70,32 +130,65 @@
       </section>
       <!-- KONTAKTFORMULAR SEKTION -->
       <section>
-        <article>
-          <div><h2>Kontaktformular</h2></div>
-          <!-- FORM -->
+        <article class="p-10 pt-0">
           <div>
+            <h2 class="flex justify-center text-h2_mobil">Kontaktformular</h2>
+          </div>
+          <!-- FORM -->
+          <div class="">
             <form action="">
-              <div>
-                <label for="">* Fulde navn</label>
-                <input required placeholder="Fx. Jørgen Carlsen" type="text" />
+              <div class="pt-5">
+                <div class="text-brodtekst_mobil">
+                  <label class="text-brodtekst_mobil" for=""
+                    ><span class="text-orange">*</span>
+                    <span class="text-brodtekst_mobil">Fulde navn</span>
+                  </label>
+                </div>
+                <br />
+                <div class="text-morkegron">
+                  <input
+                    required
+                    placeholder="Fx. Jørgen Carlsen"
+                    type="text"
+                  />
+                </div>
               </div>
-              <div>
-                <label for="">* Email</label>
-                <input
-                  required
-                  placeholder="Fx. jørgen.carlsen@gmail.com"
-                  type="email"
-                />
+              <div class="pt-5">
+                <label for=""> <span class="text-orange">*</span> Email</label>
+                <br />
+                <div class="pt-3">
+                  <input
+                    required
+                    placeholder="Fx. jørgen.carlsen@gmail.com"
+                    type="email"
+                  />
+                </div>
               </div>
-              <div>
-                <label for="">* Emne</label>
-                <textarea required name="" id="" cols="20" rows="5"></textarea>
+              <div class="pt-5">
+                <label for=""
+                  ><span class="text-orange">*</span>
+                  <span class="text-brodtekst_mobil">Emne</span>
+                </label>
+                <br />
+                <div class="pt-3">
+                  <textarea
+                    required
+                    name=""
+                    id=""
+                    cols="20"
+                    rows="5"
+                  ></textarea>
+                </div>
               </div>
-              <div>
-                <p>* Skal besvares</p>
+              <div class="pt-5">
+                <p class="text-brodtekst_mobil">
+                  <span class="text-orange">*</span> Skal besvares
+                </p>
               </div>
-              <div>
-                <button>
+              <div class="pt-5">
+                <button
+                  class="rounded-sm border-2 border-morkegron px-3 text-h3_mobil text-morkegron"
+                >
                   <input type="submit" value="Send Formular" />
                 </button>
               </div>
