@@ -24,7 +24,7 @@ module.exports = {
       h2_web: "4.375rem",
       h3_web: "3.125rem",
       h4_web: "2.8rem",
-      brodtekst_web: "1.875rem",
+      brodtekst_web: "1.3rem",
     },
     extend: {},
   },
