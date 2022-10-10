@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-    p {
-        font-family: Times, "Times New Roman", Georgia, serif;
-    }
-    h1, h2, h3, h4, button, a {
-        font-family: 'Bebas Neue', cursive;
-    }
+  p,
+  input, li {
+    font-family: Times, "Times New Roman", Georgia, serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  button,
+  a,
+  label {
+    font-family: "Bebas Neue", cursive;
+  }
 }

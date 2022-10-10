@@ -17,27 +17,29 @@
     <main>
       <!-- VÆR MED NAVIGATION -->
       <section>
-        <div><h1>Vær Med</h1></div>
-        <nav>
-          <ul class="">
+        <div><h1 class="text-center text-h1_mobil">Vær Med</h1></div>
+        <nav class="p-2 shadow-inner">
+          <ul class="flex justify-center gap-10 text-h3_mobil">
             <li><a href="frivillig.html">Frivillig</a></li>
 
-            <li><a href="arrangoer.html">Arrangør</a></li>
+            <li class="text-orange"><a href="arrangoer.html">Arrangør</a></li>
 
             <li><a href="line_up.html">Line-up</a></li>
           </ul>
         </nav>
       </section>
       <!-- BLIV ARRANGØR SEKTION -->
-      <section>
+      <section class="px-10">
         <article>
           <!-- Lille Illustration start -->
-          <div>
-            <img src="" alt="" />
+          <div class="absolute right-10 w-20">
+            <img src="Puslespil.svg" alt="" />
           </div>
           <!-- Lille Illustration slut -->
-          <div><h2>Bliv Arrangør</h2></div>
           <div>
+            <h2 class="pt-10 text-center text-h2_mobil">Bliv Arrangør</h2>
+          </div>
+          <div class="my-5 flex flex-col gap-8 text-brodtekst_mobil">
             <p>
               VILDSKUD festival søger PR og SoMe ansvarlig – det kan blive dig!
             </p>
@@ -59,11 +61,15 @@
         </article>
       </section>
       <!-- ERFARING SEKTION -->
-      <section>
-        <article>
-          <div><h3>Du får erfaringer inden for</h3></div>
+      <section class="bg-graagron px-10">
+        <article class="p-3">
           <div>
-            <ul>
+            <h3 class="mx-auto w-2/3 text-center text-h3_mobil">
+              Du får <span class="text-orange"> erfaringer</span> inden for
+            </h3>
+          </div>
+          <div class="text-brodtekst_mobil">
+            <ul class="list-disc">
               <li>Projektledelse</li>
               <li>Budgetplanlægning</li>
               <li>PR-strategier på SoMe platforme</li>
@@ -81,7 +87,7 @@
         </article>
       </section>
       <!-- ANSØGNING SEKTION -->
-      <section>
+      <section class="px-10">
         <article>
           <!-- Lille Illustration start -->
           <div>
@@ -91,7 +97,7 @@
           <div>
             <h3>Ansøgning</h3>
           </div>
-          <div>
+          <div class="text-brodtekst_mobil">
             <p>
               Ønsker du at være en del af arrangørgruppen til Vildskud Festival
               2020?
@@ -106,19 +112,20 @@
         </article>
       </section>
       <!-- SLUT SEKTION -->
-      <section>
+      <section class="px-10">
         <article>
           <!-- STOR ILLUSTRATION START -->
           <div>
             <img src="" alt="" />
           </div>
           <!-- STOR ILLUSTRATION SLUT -->
-          <div>
+          <div class="text-brodtekst_mobil">
             <p>VI GLÆDER OS TIL AT HØRE FRA DIG!</p>
           </div>
         </article>
       </section>
     </main>
     <footer></footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
