@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   p,
-  input {
+  input, li {
     font-family: Times, "Times New Roman", Georgia, serif;
   }
   h1,
