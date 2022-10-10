@@ -13,7 +13,7 @@ module.exports = {
     },
     fontSize: {
       h1_mobil: "3.125rem",
-      h2_mobil: "1.563rem",
+      h2_mobil: "2rem",
       h3_mobil: "1.25rem",
       brodtekst_mobil: "1rem",
       h1_web: "6.25rem",
