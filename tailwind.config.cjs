@@ -10,6 +10,7 @@ module.exports = {
       lysegron: "#C8DEA4",
       morkegron: "#92A377",
       graagron: "#D3D9C8",
+      baggrund: "FAF9F8",
     },
     fontSize: {
       h1_mobil: "4rem",
