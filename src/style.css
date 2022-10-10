@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
   p,
-  input, li {
+  input, li, .text_link {
     font-family: Times, "Times New Roman", Georgia, serif;
   }
   h1,
@@ -15,4 +15,5 @@
   label {
     font-family: "Bebas Neue", cursive;
   }
+  
 }

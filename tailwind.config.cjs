@@ -26,6 +26,7 @@ module.exports = {
       h4_web: "2.8rem",
       brodtekst_web: "1.3rem",
     },
+    
     extend: {},
   },
   plugins: [

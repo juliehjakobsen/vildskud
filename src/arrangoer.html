@@ -17,9 +17,11 @@
     <main>
       <!-- VÆR MED NAVIGATION -->
       <section>
-        <div><h1 class="text-center text-h1_mobil">Vær Med</h1></div>
+        <div>
+          <h1 class="text-center text-h1_mobil lg:text-h1_mobil">Vær Med</h1>
+        </div>
         <nav class="p-2 shadow-inner">
-          <ul class="flex justify-center gap-10 text-h3_mobil">
+          <ul class="flex justify-center gap-10 text-h3_mobil lg:text-h3_web">
             <li><a href="frivillig.html">Frivillig</a></li>
 
             <li class="text-orange"><a href="arrangoer.html">Arrangør</a></li>
@@ -29,29 +31,33 @@
         </nav>
       </section>
       <!-- BLIV ARRANGØR SEKTION -->
-      <section class="px-10">
-        <article>
+      <section class="px-10 lg:px-32">
+        <article class="my-10">
           <!-- Lille Illustration start -->
-          <div class="absolute right-10 w-20">
-            <img src="Puslespil.svg" alt="" />
+          <div class="absolute right-10 lg:top-48 lg:right-96">
+            <img class="w-20 lg:w-48" src="Puslespil.svg" alt="" />
           </div>
           <!-- Lille Illustration slut -->
           <div>
-            <h2 class="pt-10 text-center text-h2_mobil">Bliv Arrangør</h2>
+            <h2 class="pt-10 text-center text-h2_mobil lg:text-h2_web">
+              Bliv Arrangør
+            </h2>
           </div>
-          <div class="my-5 flex flex-col gap-8 text-brodtekst_mobil">
-            <p>
+          <div
+            class="my-5 flex flex-col gap-8 text-brodtekst_mobil lg:mx-auto lg:grid lg:grid-cols-2 lg:py-5 lg:text-brodtekst_web"
+          >
+            <p class="lg:col-start-1 lg:row-start-1">
               VILDSKUD festival søger PR og SoMe ansvarlig – det kan blive dig!
             </p>
-            <p>
+            <p class="lg:col-start-1 lg:row-start-2">
               Vi giver dig kunstnerisk frihed til at danne rammerne for
               festivalens visuelle udtryk!
             </p>
-            <p>
+            <p class="lg:col-start-2 lg:row-start-1">
               Du bliver en del af et stærkt kunstnerisk team, som brænder for
               scenekunsten og festivalen!
             </p>
-            <p>
+            <p class="lg:col-start-2 lg:row-start-2">
               Arrangørgruppen arbejder med en flad struktur og er altid åben for
               at få flere med. Sammensætningen af gruppen forandrer sig fra år
               til år og derfor forandrer måden hvorpå arbejdet med festivalen
@@ -61,65 +67,78 @@
         </article>
       </section>
       <!-- ERFARING SEKTION -->
-      <section class="bg-graagron px-10">
-        <article class="p-3">
-          <div>
-            <h3 class="mx-auto w-2/3 text-center text-h3_mobil">
-              Du får <span class="text-orange"> erfaringer</span> inden for
-            </h3>
-          </div>
-          <div class="text-brodtekst_mobil">
-            <ul class="list-disc">
-              <li>Projektledelse</li>
-              <li>Budgetplanlægning</li>
-              <li>PR-strategier på SoMe platforme</li>
-              <li>Udfoldelse af pressemeddelelser</li>
-              <li>Grafisk design af program og plakater</li>
-              <li>
-                Networking og samarbejde med professionelle scener i København
-              </li>
-              <li>
-                Planlægning og udvikling af Danmarks største festival for det
-                scenekunstneriske vækstlag!
-              </li>
-            </ul>
-          </div>
-        </article>
-      </section>
-      <!-- ANSØGNING SEKTION -->
-      <section class="px-10">
-        <article>
-          <!-- Lille Illustration start -->
-          <div>
-            <img src="" alt="" />
-          </div>
-          <!-- Lille Illustration slut -->
-          <div>
-            <h3>Ansøgning</h3>
-          </div>
-          <div class="text-brodtekst_mobil">
-            <p>
-              Ønsker du at være en del af arrangørgruppen til Vildskud Festival
-              2020?
-            </p>
-            <p>Så send en motiveret ansøgning til:</p>
-            <p>info@vildskud.dk</p>
-            <p>
-              Vi tager imod ansøgninger hele året, så tøv ikke med at kontakte
-              os.
-            </p>
-          </div>
-        </article>
+      <!-- sektion kun til at lave grid i web version -->
+      <section class="lg:my-20 lg:grid lg:grid-cols-2 lg:px-32">
+        <section class="bg-graagron px-10">
+          <article class="p-5">
+            <div>
+              <h3
+                class="mx-auto w-2/3 text-center text-h3_mobil lg:text-h3_web"
+              >
+                Du får <span class="text-orange"> erfaringer</span> inden for
+              </h3>
+            </div>
+            <div class="text-brodtekst_mobil lg:text-brodtekst_web">
+              <ul class="flex list-disc flex-col gap-3">
+                <li>Projektledelse</li>
+                <li>Budgetplanlægning</li>
+                <li>PR-strategier på SoMe platforme</li>
+                <li>Udfoldelse af pressemeddelelser</li>
+                <li>Grafisk design af program og plakater</li>
+                <li>
+                  Networking og samarbejde med professionelle scener i København
+                </li>
+                <li>
+                  Planlægning og udvikling af Danmarks største festival for det
+                  scenekunstneriske vækstlag!
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <!-- ANSØGNING SEKTION -->
+        <section class="px-10">
+          <article class="py-5">
+            <!-- Lille Illustration start -->
+            <div class="absolute">
+              <img src="Puslespil.svg" alt="" />
+            </div>
+            <!-- Lille Illustration slut -->
+            <div class="py-10">
+              <div class="">
+                <h3 class="text-center text-h3_mobil lg:text-h3_web">
+                  Ansøgning
+                </h3>
+              </div>
+              <div
+                class="flex flex-col gap-5 py-5 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <p>
+                  Ønsker du at være en del af arrangørgruppen til Vildskud
+                  Festival 2020?
+                </p>
+                <p>Så send en motiveret ansøgning til:</p>
+                <p class="italic">info@vildskud.dk</p>
+                <p>
+                  Vi tager imod ansøgninger hele året, så tøv ikke med at
+                  kontakte os.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
       <!-- SLUT SEKTION -->
       <section class="px-10">
         <article>
           <!-- STOR ILLUSTRATION START -->
-          <div>
-            <img src="" alt="" />
+          <div class="mx-auto lg:w-1/3">
+            <img src="Arrangoer.svg" alt="" />
           </div>
           <!-- STOR ILLUSTRATION SLUT -->
-          <div class="text-brodtekst_mobil">
+          <div
+            class="py-10 text-center text-brodtekst_mobil font-bold lg:text-brodtekst_web"
+          >
             <p>VI GLÆDER OS TIL AT HØRE FRA DIG!</p>
           </div>
         </article>
