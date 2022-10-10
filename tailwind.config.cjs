@@ -16,6 +16,7 @@ module.exports = {
       h1_mobil: "4rem",
       h2_mobil: "3rem",
       h3_mobil: "2rem",
+      h4_mobil: "1.5rem",
       brodtekst_mobil: "1rem",
       footer_mobil: "0.8rem",
       footer_mobil_links: "0.8rem",
