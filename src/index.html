@@ -13,13 +13,21 @@
     />
   </head>
   <body>
-    <header class="border-b border-black">
+    <header class="border-black border-b">
       <nav class="navbar justify-between">
         <!-- HEADER NAVIGATION MOBIL -->
         <div class="lg:hidden">
           <img class="w-7" src="Vildskud_logo_mobil.svg" alt="" />
         </div>
         <div class="absolute right-5">
+          <div class="lg:hidden">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="#888888"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
           <div class="dropdown">
             <label
               tabindex="0"
@@ -35,7 +43,7 @@
 
             <ul
               tabindex="0"
-              class="dropdown-content menu menu-compact absolute top-14 -left-96 w-screen border-y border-solid border-black bg-white p-5"
+              class="border-black bg-white dropdown-content menu menu-compact absolute -left-96 top-14 w-[64vh] border-y border-solid bg-hvid p-5"
             >
               <li>
                 <a class="justify-between" href="program.html">Program</a>
@@ -51,7 +59,7 @@
                       /></svg></span
                 ></a>
 
-                <ul class="relative left-0 bg-white shadow-inner">
+                <ul class="bg-white relative left-0 shadow-inner">
                   <li><a href="frivillig.html">Bliv Frivillig</a></li>
                   <li><a href="arrangoer.html">Bliv Arrangør</a></li>
                   <li><a href="line_up.html">Bliv en del af Line-up</a></li>
@@ -63,7 +71,13 @@
               <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
           </div>
-          <div class="lg:hidden">
+        </div>
+        <!-- HEADER NAVIGATION DESKTOP -->
+        <div class="absolute left-5 hidden lg:block">
+          <img class="w-32" src="Vildskud_logo.svg" alt="" />
+        </div>
+        <div class="absolute right-5">
+          <div class="hidden lg:block">
             <svg width="32" height="32" viewBox="0 0 24 24">
               <path
                 fill="#888888"
@@ -71,14 +85,8 @@
               />
             </svg>
           </div>
-        </div>
-        <!-- HEADER NAVIGATION DESKTOP -->
-        <div class="absolute left-5 hidden lg:block">
-          <img class="w-32" src="Vildskud_logo.svg" alt="" />
-        </div>
-        <div class="absolute right-5">
           <div class="navbar-center hidden lg:flex">
-            <ul tabindex="0" class="menu menu-horizontal bg-white p-0 p-5">
+            <ul tabindex="0" class="bg-white menu menu-horizontal z-10 p-5">
               <li>
                 <a class="justify-between" href="program.html">Program</a>
               </li>
@@ -93,7 +101,7 @@
                       /></svg></span
                 ></a>
 
-                <ul class="bg-white shadow-inner">
+                <ul class="border-black border bg-hvid shadow-inner">
                   <li><a href="frivillig.html">Bliv Frivillig</a></li>
                   <li><a href="arrangoer.html">Bliv Arrangør</a></li>
                   <li><a href="line_up.html">Bliv en del af Line-up</a></li>
@@ -101,22 +109,14 @@
               </li>
 
               <li><a href="om_vildskud.html">Om Vildskud</a></li>
-              <li><a href="teamet_bag.html">Teamet Bag</a></li>
+              <li><a href="teamet_bag.html">Teamet bag</a></li>
               <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-          </div>
-          <div class="hidden lg:block">
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path
-                fill="#888888"
-                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
-              />
-            </svg>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="relative">
       <!-- HERO SEKTION -->
       <section>
         <!-- HERO BILLEDE -->
@@ -130,8 +130,8 @@
         </article>
         <!-- BILLET KNAP -->
         <article>
-          <div class="align-center">
-            <button class="underline">
+          <div class="flex justify-center">
+            <button class="my-5 text-h2_mobil underline">
               <a href="billet.html">Gå til billetsiden</a>
             </button>
           </div>
@@ -139,62 +139,88 @@
       </section>
 
       <!-- OVERBLIK FORSIDE SEKTION -->
-      <section>
+      <section class="grid grid-cols-2 px-10 lg:px-32">
         <!-- PROGRAM DEL -->
-        <article>
+        <article class="row-start-1 my-5">
           <div>
-            <h2>Program</h2>
+            <h2 class="text-h2_mobil text-orange lg:text-h2_web">Program</h2>
           </div>
-          <div>
+          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
             <p>Find dine yndlingsforestillinger og se programmet</p>
           </div>
           <div>
-            <button><a href="program.html">Læs mere</a></button>
+            <button
+              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+            >
+              <a href="program.html">Læs mere</a>
+            </button>
           </div>
         </article>
         <!-- OM VILDSKUD DEL -->
-        <article>
+        <article class="col-start-2 row-start-2 my-5 text-right">
           <div>
-            <h2>Om Vildskud</h2>
+            <h2 class="text-h2_mobil text-morkegron lg:text-h2_web">
+              Om Vildskud
+            </h2>
           </div>
           <div>
-            <p>Læs om vildskud og find ud af hvem vi i virkeligheden er</p>
+            <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+              Læs om vildskud og find ud af hvem vi i virkeligheden er
+            </p>
           </div>
           <div>
-            <button><a href="om_vildskud.html">Læs mere</a></button>
+            <button
+              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+            >
+              <a href="om_vildskud.html">Læs mere</a>
+            </button>
           </div>
         </article>
         <!-- VÆR MED DEL -->
-        <article>
+        <article class="row-start-3 my-5">
           <div>
-            <h2>Vær med</h2>
+            <h2 class="text-h2_mobil text-orange lg:text-h2_web">Vær med</h2>
           </div>
           <div>
-            <p>Vil du være en del af teamet, kan du læse mere om:</p>
+            <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+              Vil du være en del af teamet, kan du læse mere om:
+            </p>
           </div>
           <div>
-            <button><a href="frivillig.html">Frivillig</a></button>
+            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+              <a href="frivillig.html">Frivillig</a>
+            </button>
           </div>
           <div>
-            <button><a href="arrangoer.html">Arrangør</a></button>
+            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+              <a href="arrangoer.html">Arrangør</a>
+            </button>
           </div>
           <div>
-            <button><a href="line_up.html">Line-up</a></button>
+            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+              <a href="line_up.html">Line-up</a>
+            </button>
           </div>
         </article>
         <!-- TEAMET BAG DEL -->
-        <article>
+        <article class="col-start-2 row-start-4 my-5 text-right">
           <div>
-            <h2>Teamet bag</h2>
+            <h2 class="text-h2_mobil text-morkegron lg:text-h2_web">
+              Teamet bag
+            </h2>
           </div>
           <div>
-            <p>
+            <p class="text-brodtekst_mobil lg:text-brodtekst_web">
               Læs mere om os der kæmper for at bringe liv til den fredeste
               festival
             </p>
           </div>
           <div>
-            <button><a href="teamet_bag.html">Læs mere</a></button>
+            <button
+              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+            >
+              <a href="teamet_bag.html">Læs mere</a>
+            </button>
           </div>
         </article>
       </section>
