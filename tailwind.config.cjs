@@ -17,6 +17,7 @@ module.exports = {
       h2_mobil: "3rem",
       h3_mobil: "2rem",
       h4_mobil: "1.5rem",
+      h5_mobil: "1.2rem",
       brodtekst_mobil: "1rem",
       footer_mobil: "0.8rem",
       footer_mobil_links: "0.8rem",
@@ -24,8 +25,10 @@ module.exports = {
       h2_web: "4.375rem",
       h3_web: "3.125rem",
       h4_web: "2.8rem",
+      h5_web: "1.5rem",
       brodtekst_web: "1.3rem",
     },
+
     extend: {},
   },
   plugins: [
