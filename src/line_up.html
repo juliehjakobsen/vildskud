@@ -12,30 +12,50 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="">
     <header></header>
     <main>
       <!-- VÆR MED NAVIGATION -->
       <section>
-        <div><h1>Vær Med</h1></div>
-        <nav>
-          <ul class="">
-            <li><a href="frivillig.html">Frivillig</a></li>
+        <div class="text-center">
+          <h1 class="text-h1_mobil lg:text-h1_web">Vær Med</h1>
+        </div>
+        <nav class="p-0 text-h3_mobil shadow-inner lg:text-h3_web">
+          <ul class="flex justify-evenly">
+            <li class="text-orange"><a href="frivillig.html">Frivillig</a></li>
+            <li class="pt-2">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12 15a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z"
+                />
+              </svg>
+            </li>
 
             <li><a href="arrangoer.html">Arrangør</a></li>
-
+            <li class="pt-2">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12 15a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z"
+                />
+              </svg>
+            </li>
             <li><a href="line_up.html">Line-up</a></li>
           </ul>
         </nav>
       </section>
       <!-- LINE-UP SEKTION -->
-      <section>
+      <section class="p-10">
         <article>
-          <div><h2>Bliv en del af line-up</h2></div>
           <div>
-            <p>
-              VILDSKUD Festival fejrer 20års jubilæum – og DU skal optræde!il
-              du/i være med?
+            <h2 class="pb-5 text-center text-h2_mobil lg:text-h2_web">
+              Bliv en del af line-up
+            </h2>
+          </div>
+          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
+            <p class="pb-3">
+              VILDSKUD Festival fejrer 20års jubilæum! Vil du/I være med?
             </p>
             <p>
               VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt
@@ -46,16 +66,24 @@
         </article>
       </section>
       <!-- KORT INFO SEKTION -->
-      <section>
+      <section class="relative bg-graagron p-10">
         <article>
-          <div><h3>Kort Info</h3></div>
+          <div>
+            <h3 class="pb-5 text-center text-h3_mobil">
+              Kort <span class="text-orange"> Info</span>
+            </h3>
+          </div>
           <!-- LILLE ILLUSTRATION START -->
           <div>
-            <img src="" alt="" />
+            <img
+              class="absolute left-96 top-10 w-2/12"
+              src="Dame_2.svg"
+              alt=""
+            />
           </div>
           <!-- LILLE ILLUSTRATION SLUT -->
           <div>
-            <p>
+            <p class="text-brodtekst_mobil lg:text-brodtekst_web">
               Vildskud afholdes hvert år d. 2.-6. august og giver scenekunstnere
               en platform til at udfolde og udvikle deres forestillinger med
               mulighed for at vinde lækre priser, få sparring med dygtige
@@ -66,10 +94,10 @@
         </article>
       </section>
       <!-- ANSØGNING SEKTION -->
-      <section>
+      <section class="p-10">
         <article>
-          <div><h3>Ansøgning</h3></div>
-          <div>
+          <div><h3 class="pb-5 text-center text-h3_mobil">Ansøgning</h3></div>
+          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
             <p>
               Ansøgningsprocessen er en todelt affære; hvor du først udfylder og
               indsender en ansøgningsblanket.
@@ -79,12 +107,16 @@
               april 2022, kl. 18.00.
             </p>
           </div>
-          <div>
-            <button><a href="">Udfyld ansøgningblanket</a></button>
+          <div class="mx-auto py-5 text-center">
+            <button
+              class="h-10 w-96 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
+            >
+              <a class="text-h4_mobil" href="">Udfyld ansøgningblanket</a>
+            </button>
           </div>
-          <div>
+          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
             <p>Send venligst din ansøgning til info@vildskud.dk</p>
-            <p>
+            <p class="pt-5">
               Herefter vil du blive indkaldt til showcases, som ligger i
               weekenden 21.-23. april 2022.
             </p>
@@ -93,26 +125,101 @@
       </section>
       <!-- SLUT SEKTION -->
       <section>
-        <article>
+        <article class="p-10">
           <!-- LILLE ILLUSTRATION START -->
-          <div>
-            <img src="" alt="" />
+          <div class="relative">
+            <img
+              class="absolute -top-10 w-3/12 rotate-12"
+              src="Dame_1.svg"
+              alt=""
+            />
           </div>
           <!-- LILLE ILLUSTRATION SLUT -->
-          <div>
-            <p>
+          <div class="mx-auto w-1/2">
+            <p class="pt-10 text-brodtekst_mobil lg:text-brodtekst_web">
               Vil du se hvem der tidligere har optrådt på Vildskud festivalen?
             </p>
-            <button><a href="arkiv.html">Klik her</a></button>
+            <button
+              class="mt-5 h-10 w-52 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
+            >
+              <a class="text-h4_mobil" href="arkiv.html">Klik her</a>
+            </button>
           </div>
-          <!-- STOR ILLUSTRATION START -->
-          <div>
-            <img src="" alt="" />
-          </div>
-          <!-- STOR ILLUSTRATION SLUT -->
         </article>
+        <!-- STOR ILLUSTRATION START -->
+        <div class="w-full">
+          <img src="Lineup.svg" alt="" />
+        </div>
+        <!-- STOR ILLUSTRATION SLUT -->
       </section>
     </main>
-    <footer></footer>
+
+    <!-- FOOTER -->
+    <footer class="">
+      <hr class="text-sort" />
+      <div class="grid grid-cols-2 gap-10 p-5 lg:mx-auto lg:w-2/3 lg:pl-48">
+        <div class="">
+          <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
+            VILDSKUD
+          </h4>
+          <p class="text-footer_mobil lg:text-brodtekst_mobil">
+            Vildskud er Københavns største og eneste scenekunstfestival.
+          </p>
+          <p class="text-footer_mobil lg:text-brodtekst_mobil">
+            Hver sommer fylder vi gaderne med scenekunst, liv og glade dage.
+          </p>
+        </div>
+
+        <div class="">
+          <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
+            VI ELSKER BÆREDYGTIGHED
+          </h4>
+          <p class="text-footer_mobil lg:text-brodtekst_mobil">
+            Hos Vildskud gør vi meget for ikke at belaste vores jord. Vi ønsker
+            ikke at udlede mere CO2 end nødvendigt!
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 pb-5 text-center lg:relative lg:pb-10">
+        <a href="index.html">
+          <img
+            class="h-1/12 mx-auto w-1/2 lg:absolute lg:left-32 lg:-top-32 lg:w-1/12"
+            src="Vildskud_logo_mobil.svg"
+            alt=""
+        /></a>
+        <a class="mx-auto w-5/12 pt-2 lg:w-2/12" href="">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
+            />
+          </svg>
+        </a>
+        <a class="mx-auto w-5/12 pt-2 lg:w-2/12" href="">
+          <svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+            />
+          </svg>
+        </a>
+        <a class="pt-4 text-h4_mobil lg:text-h3_mobil" href="kontakt.html"
+          >FAQ</a
+        >
+        <a class="pt-4 text-h4_mobil lg:text-h3_mobil" href="kontakt.html"
+          >Kontakt</a
+        >
+      </div>
+
+      <div
+        class="flex justify-evenly bg-beige py-2 text-footer_mobil_links lg:text-brodtekst_web"
+      >
+        <a href="">Cookiepolitik</a>
+        <a href="">Privatlivspolitik</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
