@@ -6,26 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud Festival - Program 2022</title>
     <script type="module" crossorigin src="./assets/main.998dc7e8.js"></script>
-    <link rel="stylesheet" href="./assets/main.29d7addd.css">
+    <link rel="stylesheet" href="./assets/main.9ac72ac0.css">
   </head>
   <body class="bg-baggrund">
     <header class="border-black border-b">
       <nav class="navbar justify-between">
-        <!-- HEADER NAVIGATION MOBIL -->
-        <div class="lg:hidden">
-          <a href="index.html"
-            ><img class="w-7" src="./assets/Vildskud_logo_mobil.9bc95135.svg" alt=""
+        <!-- HEADER NAVIGATION MOBIL START -->
+        <div class="pl-5 lg:hidden">
+          <a href="index.html">
+            <img class="w-7" src="./assets/Vildskud_logo_mobil.9bc95135.svg" alt=""
           /></a>
         </div>
         <div class="absolute right-5">
-          <div class="lg:hidden">
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path
-                fill="#888888"
-                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
-              />
-            </svg>
-          </div>
           <div class="dropdown">
             <label
               tabindex="0"
@@ -44,10 +36,14 @@
               class="border-black bg-white dropdown-content menu menu-compact absolute -left-96 top-14 w-[64vh] border-y border-solid bg-hvid p-5"
             >
               <li>
-                <a class="justify-between" href="program.html">Program</a>
+                <a
+                  class="justify-between py-7 text-h4_mobil"
+                  href="program.html"
+                  >Program</a
+                >
               </li>
               <li>
-                <a tabindex="0" href=""
+                <a class="py-7 text-h4_mobil" tabindex="0" href=""
                   >Vær Med
                   <span class=""
                     ><svg width="20" height="20" viewBox="0 0 24 24">
@@ -57,63 +53,141 @@
                       /></svg></span
                 ></a>
 
-                <ul class="bg-white relative left-0 shadow-inner">
-                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
-                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
-                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                <ul class="relative left-0 bg-beige shadow-inner">
+                  <li>
+                    <a class="text-brodtekst_web" href="frivillig.html"
+                      >Bliv Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="arrangoer.html"
+                      >Bliv Arrangør</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="line_up.html"
+                      >Bliv en del af Line-up</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <li><a href="om_vildskud.html">Om Vildskud</a></li>
-              <li><a href="teamet_bag.html">Teamet Bag</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="om_vildskud.html"
+                  >Om Vildskud</a
+                >
+              </li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="teamet_bag.html"
+                  >Teamet Bag</a
+                >
+              </li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="kontakt.html">Kontakt</a>
+              </li>
             </ul>
           </div>
-        </div>
-        <!-- HEADER NAVIGATION DESKTOP -->
-        <div class="absolute left-5 hidden lg:block">
-          <a href="index.html"
-            ><img class="w-32" src="./assets/Vildskud_logo.c9696f58.svg" alt=""
-          /></a>
-        </div>
-        <div class="absolute right-5">
-          <div class="hidden lg:block">
+          <div class="lg:hidden">
             <svg width="32" height="32" viewBox="0 0 24 24">
               <path
-                fill="#888888"
+                fill="#000000"
                 d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
               />
             </svg>
           </div>
+        </div>
+        <!-- HEADER NAVIGATION MOBIL SLUT -->
+        <!-- HEADER NAVIGATION DESKTOP -->
+        <div class="absolute left-5 hidden pl-10 lg:block">
+          <a href="index.html">
+            <img class="w-32" src="./assets/Vildskud_logo.c9696f58.svg" alt=""
+          /></a>
+        </div>
+        <div class="absolute right-5 pr-10">
           <div class="navbar-center hidden lg:flex">
-            <ul tabindex="0" class="bg-white menu menu-horizontal z-10 p-5">
+            <ul
+              tabindex="0"
+              class="bg-white menu menu-horizontal z-10 flex gap-10 p-5"
+            >
               <li>
-                <a class="justify-between" href="program.html">Program</a>
+                <a
+                  class="justify-between focus:bg-hvid focus:text-sort lg:text-h4_mobil"
+                  href="program.html"
+                  >Program</a
+                >
               </li>
               <li>
-                <a tabindex="0" href=""
+                <a
+                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
+                  tabindex="0"
+                  href=""
                   >Vær Med
                   <span class=""
-                    ><svg width="20" height="20" viewBox="0 0 24 24">
+                    ><svg class="" width="20" height="20" viewBox="0 0 24 24">
                       <path
-                        fill="#888888"
+                        fill="#000000"
                         d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                       /></svg></span
                 ></a>
 
                 <ul class="border-black border bg-hvid shadow-inner">
-                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
-                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
-                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                  <li>
+                    <a
+                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
+                      href="frivillig.html"
+                      >Bliv Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
+                      href="arrangoer.html"
+                      >Bliv Arrangør</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
+                      href="line_up.html"
+                      >Bliv en del af Line-up</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <li><a href="om_vildskud.html">Om Vildskud</a></li>
-              <li><a href="teamet_bag.html">Teamet bag</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <a
+                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
+                  href="om_vildskud.html"
+                  >Om Vildskud</a
+                >
+              </li>
+              <li>
+                <a
+                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
+                  href="teamet_bag.html"
+                  >Teamet bag</a
+                >
+              </li>
+              <li>
+                <a
+                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
+                  href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
+          <div class="hidden lg:block">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="#000000"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
         </div>
+        <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
     <main class="px-10 pt-7 lg:px-32">
@@ -549,6 +623,7 @@
       >
         <a href="">Cookiepolitik</a>
         <a href="">Privatlivspolitik</a>
+        <a href="sitemap.html">Sitemap</a>
       </div>
     </footer>
     
