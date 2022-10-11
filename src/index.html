@@ -5,14 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud Festival for Scenekunst</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="border-black border-b">
       <nav class="navbar justify-between">
         <!-- HEADER NAVIGATION MOBIL -->
@@ -120,22 +114,58 @@
         </div>
       </nav>
     </header>
-    <main class="relative">
+    <main class="relative bg-baggrund">
       <!-- HERO SEKTION -->
       <section>
         <!-- HERO BILLEDE -->
-        <article>
-          <div class="w-auto lg:hidden">
+        <article class="lg:hidden">
+          <div class="bg-beige text-center text-h1_mobil tracking-widest">
+            <h1>VILDSKUD</h1>
+          </div>
+
+          <div class="flex justify-between bg-lysegron p-2 text-h2_mobil">
+            <div><h2>KØBENHAVN</h2></div>
+            <div><h2>2-6 AUGUST</h2></div>
+          </div>
+          <div class="bg-morkegron text-center text-h2_mobil tracking-wide">
+            <h2>FESTIVAL FOR SCENEKUNST</h2>
+          </div>
+
+          <div class="w-auto">
             <img src="hero_mobil.svg" alt="" />
           </div>
-          <div class="hidden h-screen lg:block">
-            <img src="hero_web.svg" alt="" />
+        </article>
+
+        <article class="hidden lg:flex">
+          <div
+            class="-z-20 flex h-[95vh] w-[25vh] flex-col bg-beige pt-3 text-center text-hero_h1 tracking-widest"
+          >
+            <h2>VI</h2>
+            <h2>LD</h2>
+            <h2>SK</h2>
+            <h2>UD</h2>
+          </div>
+          <div class="w-[172.2vh]">
+            <div
+              class="flex justify-between bg-lysegron p-2 text-h2_web tracking-wider lg:pr-8 lg:pl-6"
+            >
+              <div><h2>KØBENHAVN</h2></div>
+              <div><h2>2.-6. AUGUST</h2></div>
+            </div>
+            <div
+              class="bg-morkegron text-center text-h2_web tracking-[1.75rem]"
+            >
+              <h2>FESTIVAL FOR SCENEKUNST</h2>
+            </div>
+            <div class="absolute right-8 top-80 -z-10 scale-125">
+              <img src="hero_web.svg" alt="" />
+            </div>
           </div>
         </article>
         <!-- BILLET KNAP -->
         <article>
-          <div class="flex justify-center">
-            <button class="my-5 text-h2_mobil underline">
+          <div class="flex justify-center lg:mt-44">
+            <button class="text-h2_mobil underline">
               <a href="billet.html">Gå til billetsiden</a>
             </button>
           </div>
@@ -143,7 +173,7 @@
       </section>
 
       <!-- OVERBLIK FORSIDE SEKTION -->
-      <section class="grid grid-cols-2 px-10 lg:px-32">
+      <section class="mb-20 grid grid-cols-2 px-10 lg:px-32">
         <!-- PROGRAM DEL -->
         <article class="row-start-1 my-5">
           <div>
@@ -154,7 +184,7 @@
           </div>
           <div>
             <button
-              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+              class="border-black my-3 rounded-sm border bg-hvid px-3 lg:px-5 lg:text-h5_web"
             >
               <a href="program.html">Læs mere</a>
             </button>
@@ -174,7 +204,7 @@
           </div>
           <div>
             <button
-              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+              class="border-black my-3 rounded-sm border bg-hvid px-3 lg:px-5 lg:text-h5_web"
             >
               <a href="om_vildskud.html">Læs mere</a>
             </button>
@@ -191,17 +221,17 @@
             </p>
           </div>
           <div>
-            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+            <button class="text-h3_mobil underline lg:text-h5_web">
               <a href="frivillig.html">Frivillig</a>
             </button>
           </div>
           <div>
-            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+            <button class="text-h3_mobil underline lg:text-h5_web">
               <a href="arrangoer.html">Arrangør</a>
             </button>
           </div>
           <div>
-            <button class="text-h3_mobil underline lg:text-brodtekst_web">
+            <button class="text-h3_mobil underline lg:text-h5_web">
               <a href="line_up.html">Line-up</a>
             </button>
           </div>
@@ -221,7 +251,7 @@
           </div>
           <div>
             <button
-              class="border-black rounded-sm border bg-hvid px-3 lg:px-5 lg:text-brodtekst_web"
+              class="border-black my-3 rounded-sm border bg-hvid px-3 lg:px-5 lg:text-h5_web"
             >
               <a href="teamet_bag.html">Læs mere</a>
             </button>

@@ -10,6 +10,7 @@
   .site_link {
     font-family: Times, "Times New Roman", Georgia, serif;
   }
+  
   h1,
   h2,
   h3,
@@ -17,6 +18,10 @@
   button,
   a,
   label {
-    font-family: "Bebas Neue", cursive;
+    font-family: bebas;
+  }
+  @font-face {
+    font-family: bebas;
+    src: url(font/bebasneue-regular.woff);
   }
 }
