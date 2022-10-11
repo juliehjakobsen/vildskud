@@ -12,22 +12,16 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-baggrund">
+  <body class="overflow-x-hidden bg-baggrund">
     <header class="border-black border-b">
       <nav class="navbar justify-between">
-        <!-- HEADER NAVIGATION MOBIL -->
-        <div class="lg:hidden">
-          <img class="w-7" src="Vildskud_logo_mobil.svg" alt="" />
+        <!-- HEADER NAVIGATION MOBIL START -->
+        <div class="pl-5 lg:hidden">
+          <a href="index.html">
+            <img class="w-7" src="Vildskud_logo_mobil.svg" alt=""
+          /></a>
         </div>
         <div class="absolute right-5">
-          <div class="lg:hidden">
-            <svg width="32" height="32" viewBox="0 0 24 24">
-              <path
-                fill="#888888"
-                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
-              />
-            </svg>
-          </div>
           <div class="dropdown">
             <label
               tabindex="0"
@@ -46,10 +40,14 @@
               class="border-black bg-white dropdown-content menu menu-compact absolute -left-96 top-14 w-[64vh] border-y border-solid bg-hvid p-5"
             >
               <li>
-                <a class="justify-between" href="program.html">Program</a>
+                <a
+                  class="justify-between py-7 text-h4_mobil"
+                  href="program.html"
+                  >Program</a
+                >
               </li>
               <li>
-                <a tabindex="0" href=""
+                <a class="py-7 text-h4_mobil" tabindex="0" href=""
                   >Vær Med
                   <span class=""
                     ><svg width="20" height="20" viewBox="0 0 24 24">
@@ -59,65 +57,126 @@
                       /></svg></span
                 ></a>
 
-                <ul class="bg-white relative left-0 shadow-inner">
-                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
-                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
-                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                <ul class="relative left-0 bg-beige shadow-inner">
+                  <li>
+                    <a class="text-brodtekst_web" href="frivillig.html"
+                      >Bliv Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="arrangoer.html"
+                      >Bliv Arrangør</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="line_up.html"
+                      >Bliv en del af Line-up</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <li><a href="om_vildskud.html">Om Vildskud</a></li>
-              <li><a href="teamet_bag.html">Teamet Bag</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="om_vildskud.html"
+                  >Om Vildskud</a
+                >
+              </li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="teamet_bag.html"
+                  >Teamet Bag</a
+                >
+              </li>
+              <li>
+                <a class="py-7 text-h4_mobil" href="kontakt.html">Kontakt</a>
+              </li>
             </ul>
           </div>
-        </div>
-        <!-- HEADER NAVIGATION DESKTOP -->
-        <div class="absolute left-5 hidden lg:block">
-          <img class="w-32" src="Vildskud_logo.svg" alt="" />
-        </div>
-        <div class="absolute right-5">
-          <div class="hidden lg:block">
+          <div class="lg:hidden">
             <svg width="32" height="32" viewBox="0 0 24 24">
               <path
-                fill="#888888"
+                fill="#000000"
                 d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
               />
             </svg>
           </div>
+        </div>
+        <!-- HEADER NAVIGATION MOBIL SLUT -->
+        <!-- HEADER NAVIGATION DESKTOP -->
+        <div class="absolute left-5 hidden pl-10 lg:block">
+          <a href="index.html">
+            <img class="w-32" src="Vildskud_logo.svg" alt=""
+          /></a>
+        </div>
+        <div class="absolute right-5 pr-10">
           <div class="navbar-center hidden lg:flex">
-            <ul tabindex="0" class="bg-white menu menu-horizontal z-10 p-5">
+            <ul
+              tabindex="0"
+              class="bg-white menu menu-horizontal z-10 flex gap-10 p-5"
+            >
               <li>
-                <a class="justify-between" href="program.html">Program</a>
+                <a class="justify-between lg:text-h4_mobil" href="program.html"
+                  >Program</a
+                >
               </li>
               <li>
-                <a tabindex="0" href=""
+                <a class="lg:text-h4_mobil" tabindex="0" href=""
                   >Vær Med
                   <span class=""
-                    ><svg width="20" height="20" viewBox="0 0 24 24">
+                    ><svg class="" width="20" height="20" viewBox="0 0 24 24">
                       <path
-                        fill="#888888"
+                        fill="#000000"
                         d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                       /></svg></span
                 ></a>
 
                 <ul class="border-black border bg-hvid shadow-inner">
-                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
-                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
-                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                  <li>
+                    <a class="text-brodtekst_web" href="frivillig.html"
+                      >Bliv Frivillig</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="arrangoer.html"
+                      >Bliv Arrangør</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-brodtekst_web" href="line_up.html"
+                      >Bliv en del af Line-up</a
+                    >
+                  </li>
                 </ul>
               </li>
 
-              <li><a href="om_vildskud.html">Om Vildskud</a></li>
-              <li><a href="teamet_bag.html">Teamet bag</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li>
+                <a class="lg:text-h4_mobil" href="om_vildskud.html"
+                  >Om Vildskud</a
+                >
+              </li>
+              <li>
+                <a class="lg:text-h4_mobil" href="teamet_bag.html"
+                  >Teamet bag</a
+                >
+              </li>
+              <li>
+                <a class="lg:text-h4_mobil" href="kontakt.html">Kontakt</a>
+              </li>
             </ul>
           </div>
+          <div class="hidden lg:block">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="#000000"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
         </div>
+        <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
 
-    <main class="">
+    <main class="pt-7">
       <!-- VÆR MED NAVIGATION -->
       <section>
         <div class="text-center">
@@ -153,7 +212,7 @@
         </nav>
       </section>
       <!-- BLIV FRIVILLIG -->
-      <section class="p-10">
+      <section class="p-10 lg:px-32">
         <article>
           <div>
             <div>
@@ -161,35 +220,63 @@
                 Bliv Frivillig
               </h2>
             </div>
-            <div class="flex justify-center space-x-3">
-              <hr class="mt-2 w-4 border-2 bg-orange text-orange" />
-              <p class="text-center text-brodtekst_mobil">
+            <div class="flex justify-center space-x-3 pb-5">
+              <hr class="mt-3 h-0 w-4 border-2 bg-orange text-orange lg:mt-4" />
+              <p class="text-center text-brodtekst_mobil lg:text-brodtekst_web">
                 Bliv en del af vores seje team
               </p>
-              <hr class="mt-2 w-4 border-2 bg-orange text-orange" />
+              <hr class="mt-3 h-0 w-4 border-2 bg-orange text-orange lg:mt-4" />
             </div>
             <!-- LILLE ILLUSTRATION START -->
             <div>
-              <img class="w-1/12" src="haand_2.svg" alt="haand_2" />
+              <img
+                class="absolute left-4 top-64 w-1/12 rotate-90"
+                src="haand_2.svg"
+                alt="haand_2"
+              />
             </div>
             <!-- LILLE ILLUSTRATION SLUT -->
           </div>
-          <div>
-            <p class="text-brodtekst_mobil">
+          <div class="lg:grid lg:grid-cols-2 lg:gap-20">
+            <p
+              class="text-brodtekst_mobil lg:mx-auto lg:pb-3 lg:text-brodtekst_web"
+            >
               Vildskud Festival er afhængig af, at der hvert år er en masse
               frivillige, der har lyst til at være med til at gøre festivalen
               til en god oplevelse for alle deltagende.
             </p>
-            <p class="text-brodtekst_mobil">
+            <p class="text-brodtekst_mobil lg:mx-auto lg:text-brodtekst_web">
               Alle frivillige får mulighed for at se forestillingerne gratis,
               får mad under deres vagter og muligheden for at møde en masse
               teaternørder.
             </p>
           </div>
-          <!-- LILLE ILLUSTRATION START -->
+        </article>
+      </section>
+      <!-- KORT INFO SEKTION -->
+      <section class="relative bg-graagron p-10 lg:mx-auto lg:w-1/2 lg:px-32">
+        <article>
           <div>
+            <h3 class="text-center text-h3_mobil lg:text-h3_web">
+              Kort <span class="text-orange">Info</span>
+            </h3>
+          </div>
+          <div>
+            <p class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web">
+              Jobbet som frivillig består af 2 vagter på 3-4 timer. Der er et
+              infomøde d. 1. august 2022.
+            </p>
+            <p class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web">
+              Vil du være frivillig, eller har du spørgsmål så skriv til:
+            </p>
+            <p class="text-brodtekst_mobil italic lg:text-brodtekst_web">
+              frivillig@vildskud.dk
+            </p>
+          </div>
+          <!-- LILLE ILLUSTRATION START -->
+          <div class="lg:hidden">
             <img
-              class="absolute left-96 w-2/12 -rotate-45"
+              class="absolute -top-14 left-96 w-2/12 -rotate-90"
               src="haand_1.svg"
               alt="haand_1"
             />
@@ -197,37 +284,23 @@
           <!-- LILLE ILLUSTRATION SLUT -->
         </article>
       </section>
-      <!-- KORT INFO SEKTION -->
-      <section class="bg-graagron p-10">
-        <article>
-          <div>
-            <h3 class="text-center text-h3_mobil">
-              Kort <span class="text-orange">Info</span>
-            </h3>
-          </div>
-          <div>
-            <p class="pb-3 text-brodtekst_mobil">
-              Jobbet som frivillig består af 2 vagter på 3-4 timer. Der er et
-              infomøde d. 1. august 2022.
-            </p>
-            <p class="pb-3 text-brodtekst_mobil">
-              Vil du være frivillig, eller har du spørgsmål så skriv til:
-            </p>
-            <p class="text-brodtekst_mobil italic">frivillig@vildskud.dk</p>
-          </div>
-        </article>
-      </section>
       <!-- SLUT SEKTION -->
-      <section class="p-10">
+      <section class="p-10 lg:px-32">
         <article>
           <div>
-            <p class="text-center text-brodtekst_mobil font-bold">
+            <p
+              class="text-center text-brodtekst_mobil font-bold lg:text-brodtekst_web"
+            >
               VI GLÆDER OS TIL AT HØRE FRA DIG!
             </p>
           </div>
           <!-- STOR ILLUSTRATION START -->
           <div>
-            <img src="Frivillige.svg" alt="Frivillige" />
+            <img
+              class="mx-auto lg:w-1/2"
+              src="Frivillige.svg"
+              alt="Frivillige"
+            />
           </div>
           <!--  STOR ILLUSTRATION START -->
         </article>
