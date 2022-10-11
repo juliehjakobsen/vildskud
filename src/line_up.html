@@ -13,8 +13,110 @@
     />
   </head>
   <body class="">
-    <header></header>
-    <main>
+    <header class="border-black border-b">
+      <nav class="navbar justify-between">
+        <!-- HEADER NAVIGATION MOBIL -->
+        <div class="lg:hidden">
+          <img class="w-7" src="Vildskud_logo_mobil.svg" alt="" />
+        </div>
+        <div class="absolute right-5">
+          <div class="lg:hidden">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="#888888"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
+          <div class="dropdown">
+            <label
+              tabindex="0"
+              class="btn btn-ghost hover:bg-transparent lg:hidden"
+            >
+              <svg width="32" height="32" viewBox="0 0 512 512">
+                <path
+                  d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"
+                  fill="#000000"
+                />
+              </svg>
+            </label>
+
+            <ul
+              tabindex="0"
+              class="border-black bg-white dropdown-content menu menu-compact absolute -left-96 top-14 w-[64vh] border-y border-solid bg-hvid p-5"
+            >
+              <li>
+                <a class="justify-between" href="program.html">Program</a>
+              </li>
+              <li>
+                <a tabindex="0" href=""
+                  >Vær Med
+                  <span class=""
+                    ><svg width="20" height="20" viewBox="0 0 24 24">
+                      <path
+                        fill="#888888"
+                        d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                      /></svg></span
+                ></a>
+
+                <ul class="bg-white relative left-0 shadow-inner">
+                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
+                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
+                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                </ul>
+              </li>
+
+              <li><a href="om_vildskud.html">Om Vildskud</a></li>
+              <li><a href="teamet_bag.html">Teamet Bag</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- HEADER NAVIGATION DESKTOP -->
+        <div class="absolute left-5 hidden lg:block">
+          <img class="w-32" src="Vildskud_logo.svg" alt="" />
+        </div>
+        <div class="absolute right-5">
+          <div class="hidden lg:block">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="#888888"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"
+              />
+            </svg>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul tabindex="0" class="bg-white menu menu-horizontal z-10 p-5">
+              <li>
+                <a class="justify-between" href="program.html">Program</a>
+              </li>
+              <li>
+                <a tabindex="0" href=""
+                  >Vær Med
+                  <span class=""
+                    ><svg width="20" height="20" viewBox="0 0 24 24">
+                      <path
+                        fill="#888888"
+                        d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                      /></svg></span
+                ></a>
+
+                <ul class="border-black border bg-hvid shadow-inner">
+                  <li><a href="frivillig.html">Bliv Frivillig</a></li>
+                  <li><a href="arrangoer.html">Bliv Arrangør</a></li>
+                  <li><a href="line_up.html">Bliv en del af Line-up</a></li>
+                </ul>
+              </li>
+
+              <li><a href="om_vildskud.html">Om Vildskud</a></li>
+              <li><a href="teamet_bag.html">Teamet bag</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
       <!-- VÆR MED NAVIGATION -->
       <section>
         <div class="text-center">
@@ -22,8 +124,10 @@
         </div>
         <nav class="p-0 text-h3_mobil shadow-inner lg:text-h3_web">
           <ul class="flex justify-evenly">
-            <li class="text-orange"><a href="frivillig.html">Frivillig</a></li>
-            <li class="pt-2">
+            <li class="text-orange">
+              <a class="hover:underline" href="frivillig.html">Frivillig</a>
+            </li>
+            <li class="pt-2 lg:pt-5">
               <svg width="32" height="32" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -32,8 +136,10 @@
               </svg>
             </li>
 
-            <li><a href="arrangoer.html">Arrangør</a></li>
-            <li class="pt-2">
+            <li>
+              <a class="hover:underline" href="arrangoer.html">Arrangør</a>
+            </li>
+            <li class="pt-2 lg:pt-5">
               <svg width="32" height="32" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -41,23 +147,25 @@
                 />
               </svg>
             </li>
-            <li><a href="line_up.html">Line-up</a></li>
+            <li><a class="hover:underline" href="line_up.html">Line-up</a></li>
           </ul>
         </nav>
       </section>
       <!-- LINE-UP SEKTION -->
-      <section class="p-10">
+      <section class="p-10 lg:px-32">
         <article>
           <div>
             <h2 class="pb-5 text-center text-h2_mobil lg:text-h2_web">
               Bliv en del af line-up
             </h2>
           </div>
-          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
-            <p class="pb-3">
+          <div
+            class="text-brodtekst_mobil lg:grid lg:grid-cols-2 lg:text-brodtekst_web"
+          >
+            <p class="pb-3 font-bold lg:text-center">
               VILDSKUD Festival fejrer 20års jubilæum! Vil du/I være med?
             </p>
-            <p>
+            <p class="lg:mx-auto lg:px-10">
               VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt
               fra klassisk teater, udendørs danseoplevelser, storytelling
               lysshows, musiske sanseoplevelser – kun fantasien sætter grænser!
@@ -66,84 +174,92 @@
         </article>
       </section>
       <!-- KORT INFO SEKTION -->
-      <section class="relative bg-graagron p-10">
-        <article>
-          <div>
-            <h3 class="pb-5 text-center text-h3_mobil">
-              Kort <span class="text-orange"> Info</span>
-            </h3>
-          </div>
-          <!-- LILLE ILLUSTRATION START -->
-          <div>
-            <img
-              class="absolute left-96 top-10 w-2/12"
-              src="Dame_2.svg"
-              alt=""
-            />
-          </div>
-          <!-- LILLE ILLUSTRATION SLUT -->
-          <div>
-            <p class="text-brodtekst_mobil lg:text-brodtekst_web">
-              Vildskud afholdes hvert år d. 2.-6. august og giver scenekunstnere
-              en platform til at udfolde og udvikle deres forestillinger med
-              mulighed for at vinde lækre priser, få sparring med dygtige
-              dramaturger, vise deres færdigheder til det professionelle
-              scenekunstlag og anmeldere, samt udvide deres netværk.
-            </p>
-          </div>
-        </article>
-      </section>
-      <!-- ANSØGNING SEKTION -->
-      <section class="p-10">
-        <article>
-          <div><h3 class="pb-5 text-center text-h3_mobil">Ansøgning</h3></div>
-          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
-            <p>
-              Ansøgningsprocessen er en todelt affære; hvor du først udfylder og
-              indsender en ansøgningsblanket.
-            </p>
-            <p>
-              Ansøgningsblanketten skal du sende per mail til Vildskud senest 1.
-              april 2022, kl. 18.00.
-            </p>
-          </div>
-          <div class="mx-auto py-5 text-center">
-            <button
-              class="h-10 w-96 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
-            >
-              <a class="text-h4_mobil" href="">Udfyld ansøgningblanket</a>
-            </button>
-          </div>
-          <div class="text-brodtekst_mobil lg:text-brodtekst_web">
-            <p>Send venligst din ansøgning til info@vildskud.dk</p>
-            <p class="pt-5">
-              Herefter vil du blive indkaldt til showcases, som ligger i
-              weekenden 21.-23. april 2022.
-            </p>
-          </div>
-        </article>
+      <!-- tilføjet en ekstra section til at lave grid på 2 sektioner i web -->
+      <section class="lg:my-10 lg:grid lg:grid-cols-2 lg:px-32">
+        <section class="relative bg-graagron p-10">
+          <article>
+            <div>
+              <h3 class="pb-5 text-center text-h3_mobil">
+                Kort <span class="text-orange"> Info</span>
+              </h3>
+            </div>
+            <!-- LILLE ILLUSTRATION START -->
+            <div>
+              <img
+                class="absolute left-96 top-10 w-2/12 lg:top-64 lg:left-96 lg:w-3/12"
+                src="Dame_2.svg"
+                alt=""
+              />
+            </div>
+            <!-- LILLE ILLUSTRATION SLUT -->
+            <div>
+              <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+                Vildskud afholdes hvert år d. 2.-6. august og giver
+                scenekunstnere en platform til at udfolde og udvikle deres
+                forestillinger med mulighed for at vinde lækre priser, få
+                sparring med dygtige dramaturger, vise deres færdigheder til det
+                professionelle scenekunstlag og anmeldere, samt udvide deres
+                netværk.
+              </p>
+            </div>
+          </article>
+        </section>
+        <!-- ANSØGNING SEKTION -->
+        <section class="p-10 lg:px-12">
+          <article class="lg:px-0">
+            <div><h3 class="pb-5 text-center text-h3_mobil">Ansøgning</h3></div>
+            <div class="text-brodtekst_mobil lg:text-brodtekst_web">
+              <p>
+                Ansøgningsprocessen er en todelt affære; hvor du først udfylder
+                og indsender en ansøgningsblanket.
+              </p>
+              <p>
+                Ansøgningsblanketten skal du sende per mail til Vildskud senest
+                1. april 2022, kl. 18.00.
+              </p>
+            </div>
+            <div class="mx-auto py-5 text-center">
+              <button
+                class="h-10 w-96 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
+              >
+                <a class="text-h4_mobil" href="">Udfyld ansøgningblanket</a>
+              </button>
+            </div>
+            <div class="text-brodtekst_mobil lg:text-brodtekst_web">
+              <p>Send venligst din ansøgning til info@vildskud.dk</p>
+              <p class="pt-5">
+                Herefter vil du blive indkaldt til showcases, som ligger i
+                weekenden 21.-23. april 2022.
+              </p>
+            </div>
+          </article>
+        </section>
       </section>
       <!-- SLUT SEKTION -->
-      <section>
+      <section class="">
         <article class="p-10">
           <!-- LILLE ILLUSTRATION START -->
           <div class="relative">
             <img
-              class="absolute -top-10 w-3/12 rotate-12"
+              class="absolute -top-10 w-3/12 rotate-12 lg:-top-20 lg:w-2/12"
               src="Dame_1.svg"
               alt=""
             />
           </div>
           <!-- LILLE ILLUSTRATION SLUT -->
           <div class="mx-auto w-1/2">
-            <p class="pt-10 text-brodtekst_mobil lg:text-brodtekst_web">
+            <p
+              class="pt-10 text-brodtekst_mobil lg:text-center lg:text-brodtekst_web"
+            >
               Vil du se hvem der tidligere har optrådt på Vildskud festivalen?
             </p>
-            <button
-              class="mt-5 h-10 w-52 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
-            >
-              <a class="text-h4_mobil" href="arkiv.html">Klik her</a>
-            </button>
+            <div class="lg:flex lg:justify-center">
+              <button
+                class="mt-5 h-10 w-52 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
+              >
+                <a class="text-h4_mobil" href="arkiv.html">Klik her</a>
+              </button>
+            </div>
           </div>
         </article>
         <!-- STOR ILLUSTRATION START -->
