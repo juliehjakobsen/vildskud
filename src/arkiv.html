@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vildskud Festival - Arkiv</title>
+    <title>Vildskud Festival for Scenekunst</title>
   </head>
   <body>
     <header class="border-black border-b">
@@ -192,29 +192,315 @@
       <!-- ARKIV SEKTION -->
       <section>
         <article>
-          <div><h1>Arkiv</h1></div>
-          <div>
-            <h2>Se arkivet for tidligere års forestillinger herunder</h2>
+          <div class="flex justify-center">
+            <h1 class="text-h1_mobil">Arkiv</h1>
+          </div>
+          <div class="flex justify-center text-center">
+            <h2 class="text-h2_mobil">
+              Se <span class="text-orange">arkivet</span> for tidligere års
+              forestillinger herunder
+            </h2>
           </div>
         </article>
-        <!-- ARKIV FILTRERING -->
-        <article></article>
       </section>
       <!-- SLUT SEKTION -->
-      <section>
+
+      <!-- Arkiv filtrering -->
+      <section
+        class="flex-col lg:mx-auto lg:flex lg:w-[77vh]"
+        x-data="{dato: '2019'}"
+      >
         <article>
           <div>
+            <ul class="flex list-none text-h4_mobil lg:text-h4_web">
+              <li class="border-2 p-2">
+                <button x-on:click="dato = '2019'">
+                  <span class="text-h2_mobil lg:text-h2_web">2019</span>
+                </button>
+              </li>
+              <li class="border-y-2 p-2">
+                <button x-on:click="dato = '2020'">
+                  <span class="text-h2_mobil lg:text-h2_web">2020</span>
+                </button>
+              </li>
+              <li class="border-2 p-2">
+                <button x-on:click="dato = '2021'">
+                  <span class="text-h2_mobil lg:text-h2_web">2021</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- 2019 -->
+        <section
+          x-show="dato === '2019'"
+          id="6_aug"
+          class="w-[48vh] border-x-2 border-b-2 lg:w-[73.3vh]"
+        >
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">
+                  Der er altid en ny dulle på Drunken Flamingo
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">Bare Mig Selv</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">
+                  Det er en sang der ligner os
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">
+                  Mænd der elsker mænd
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">First Time</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="text-brodtekst_mobil font-bold">Sulajmas Drøm</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- 2020  -->
+        <section
+          x-show="dato === '2020'"
+          id="6_aug"
+          class="w-[48vh] border-x-2 border-b-2 lg:w-[73.3vh]"
+        >
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Hang in there</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Du er mine smukkeste dage</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Knuste hjerter i flødesovs</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Mercedes</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">We are all Charlie</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Ensomhed & Druknedød</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Jeg er god nok</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Bundløs</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Attention</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Smadrekvinde</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+          <article class="border-b-2">
+            <div
+              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
+              <div>
+                <p class="font-bold">Proprioception – da kroppen blev væk</p>
+              </div>
+            </div>
+          </article>
+          <!-- --------- -->
+        </section>
+
+        <!-- 2021  -->
+        <section>
+          <section
+            x-show="dato === '2021'"
+            id="6_aug"
+            class="w-[48vh] border-x-2 border-b-2 lg:w-[73.3vh]"
+          >
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">MASKERET</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">ALT KØRER, IK</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">ET SURT OPSTØD</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Stå ret, få ret</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Mona Lisa Natten</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+          </section>
+        </section>
+      </section>
+
+      <section class="p-10">
+        <article>
+          <div class="text-brodtekst_mobil">
             <p>
               Er du lun på scenekunst? Tør du stå foran et publikum og fortælle
               din sandhed? Så er Vildskud noget for dig!
             </p>
+            <br />
             <p>
               Tilmeld dig til næste års line-up, og vær med til at vække
               Københavns største scenekunstfestival til livs.
             </p>
           </div>
-          <div>
-            <button>
+          <div class="flex justify-center pt-5">
+            <button
+              class="rounded-sm border-2 border-morkegron p-2 text-brodtekst_mobil text-morkegron"
+            >
               <a href="line_up.html">Tilmeld dig til line-up 2023 her</a>
             </button>
           </div>
@@ -287,5 +573,6 @@
         <a href="sitemap.html">Sitemap</a>
       </div>
     </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
