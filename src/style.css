@@ -6,7 +6,8 @@
   input,
   li,
   .text_link,
-  h5 {
+  h5,
+  .site_link {
     font-family: Times, "Times New Roman", Georgia, serif;
   }
   h1,
