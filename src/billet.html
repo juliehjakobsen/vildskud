@@ -120,15 +120,18 @@
         </div>
       </nav>
     </header>
-    <main class="p-10">
+    <main class="p-10 lg:px-32">
       <section>
         <div class="flex justify-center">
-          <h1 class="text-h1_mobil">
-            billet <span class="text-h1_mobil text-orange">stepguide</span>
+          <h1 class="text-h1_mobil lg:text-h1_web">
+            billet
+            <span class="text-h1_mobil text-orange lg:text-h1_web"
+              >stepguide</span
+            >
           </h1>
         </div>
         <div class="flex justify-center">
-          <p class="text-brodtekst_mobil">
+          <p class="text-brodtekst_mobil lg:text-brodtekst_web">
             Guide til køb af billet på
             <span class="text-brodtekst_mobil underline">yourtickets.dk</span>
           </p>
@@ -136,49 +139,63 @@
       </section>
 
       <!-- step 1 -->
-      <section>
-        <div class="flex gap-3 pt-5">
-          <h3 class="pt-4 text-h3_mobil">Step</h3>
-          <h2 class="text-h2_mobil text-morkegron">1</h2>
-        </div>
-        <h5 class="text-h5_mobil font-bold">Vælg din billettype</h5>
-        <div class="flex gap-12">
-          <div>
-            <p class="py-3 text-brodtekst_mobil font-bold">Partoutbillet</p>
-            <p>
-              295,- DKK Få adgang til alle forestillinger, alle dage på
-              festivalen.
-            </p>
+      <section class="lg:grid lg:grid-cols-2 lg:gap-40">
+        <section>
+          <div class="flex gap-3 pt-5 lg:pt-12">
+            <h3 class="pt-4 text-h3_mobil lg:text-h3_web">Step</h3>
+            <h2 class="text-h2_mobil text-morkegron lg:text-h2_web">1</h2>
           </div>
-          <div>
-            <p class="py-3 text-brodtekst_mobil font-bold">Endagsbillet</p>
-            <p>
-              120,- DKK Få adgang til alle forestillinger til en valgfri dag.
-            </p>
+          <h5 class="text-h5_mobil font-bold lg:text-h5_web">
+            Vælg din billettype
+          </h5>
+          <div class="flex gap-12 lg:gap-20">
+            <div>
+              <p
+                class="py-3 text-brodtekst_mobil font-bold lg:text-brodtekst_web"
+              >
+                Partoutbillet
+              </p>
+              <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+                295,- DKK Få adgang til alle forestillinger, alle dage på
+                festivalen.
+              </p>
+            </div>
+            <div>
+              <p
+                class="py-3 text-brodtekst_mobil font-bold lg:text-brodtekst_web"
+              >
+                Endagsbillet
+              </p>
+              <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+                120,- DKK Få adgang til alle forestillinger til en valgfri dag.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- step 2 -->
-      <section>
-        <div class="flex gap-3 pt-12">
-          <h3 class="pt-4 text-h3_mobil">Step</h3>
-          <h2 class="text-h2_mobil text-morkegron">2</h2>
-        </div>
-        <h5 class="text-h5_mobil font-bold">Mail og voucher</h5>
-        <div class="flex gap-12 pt-3">
-          <div>
-            <p>
-              Efter billetkøb får du tilsendt en mail med din personlige
-              voucher.
-            </p>
+        <!-- step 2 -->
+        <section>
+          <div class="flex gap-3 pt-12">
+            <h3 class="pt-4 text-h3_mobil lg:text-h3_web">Step</h3>
+            <h2 class="text-h2_mobil text-morkegron lg:text-h2_web">2</h2>
           </div>
-          <div>
-            <p>
-              Brug denne voucher til at reservere plads til forestillingerne.
-            </p>
+          <h5 class="text-h5_mobil font-bold lg:text-h5_web">
+            Mail og voucher
+          </h5>
+          <div class="flex gap-12 pt-3 lg:gap-20 lg:pt-12">
+            <div>
+              <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+                Efter billetkøb får du tilsendt en mail med din personlige
+                voucher.
+              </p>
+            </div>
+            <div>
+              <p class="text-brodtekst_mobil lg:text-brodtekst_web">
+                Brug denne voucher til at reservere plads til forestillingerne.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
 
       <!-- step 3 -->
@@ -187,7 +204,9 @@
           <h3 class="pt-4 text-h3_mobil">Step</h3>
           <h2 class="text-h2_mobil text-morkegron">3</h2>
         </div>
-        <h5 class="text-h5_mobil font-bold">Tjek forstillinger</h5>
+        <h5 class="text-h5_mobil font-bold lg:text-h5_web">
+          Tjek forstillinger
+        </h5>
         <div class="flex gap-12 pt-3">
           <div>
             <p>
@@ -239,11 +258,13 @@
       </section>
 
       <!-- button -->
-      <button
-        class="rounded-sm border-2 border-morkegron px-3 text-morkegron hover:bg-morkegron hover:text-hvid lg:px-5 lg:text-brodtekst_web"
-      >
-        <input type="submit" value="Send Formular" />
-      </button>
+      <div class="flex justify-center pt-5">
+        <button
+          class="rounded-sm border-2 border-morkegron px-3 text-morkegron hover:bg-morkegron hover:text-hvid lg:px-5 lg:text-brodtekst_web"
+        >
+          Køb billet
+        </button>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer class="">
