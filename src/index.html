@@ -355,9 +355,9 @@
         </article>
       </section>
       <!-- COOKIEBOKS -->
-      <!-- <section>
-        <article x-data="{cookieboks: 'show'}" class="fixed top-20 z-30">
-          <div class="m-2 border border-solid bg-hvid p-8" id="cookieboks">
+      <!-- <section x-data="{ close: false }">
+        <article class="fixed top-20 z-30">
+          <div class="m-2 border border-solid bg-hvid p-8">
             <div class="">
               <p class="mb-5 text-h4_mobil font-bold">
                 Du bestemmer over dine data
@@ -381,15 +381,13 @@
             <div class="mt-5 flex justify-evenly">
               <div
                 class="w-36 border-2 border-solid border-[#a1a0a0] bg-[#b9b8b8] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#a1a0a0]"
-                id="afvis"
               >
-                <button x-on:click="cookie = false">Afvis</button>
+                <button x-on:click="close">Afvis</button>
               </div>
               <div
                 class="w-36 border-2 border-solid border-[#2db15f] bg-[#46d07b] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#2db15f]"
-                id="accepter"
               >
-                <button x-on:click="cookie = false">Accepter</button>
+                <button x-on:click="close">Accepter</button>
               </div>
             </div>
           </div>
