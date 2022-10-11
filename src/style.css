@@ -6,11 +6,10 @@
   input,
   li,
   .text_link,
-  h5,
-  .site_link {
+  h5 {
     font-family: Times, "Times New Roman", Georgia, serif;
   }
-  
+
   h1,
   h2,
   h3,
