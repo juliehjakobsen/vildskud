@@ -188,7 +188,13 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main class="pt-7">
+
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/line_up.html"
+      class="pt-7"
+    >
       <!-- VÆR MED NAVIGATION -->
       <section>
         <div class="text-center">
@@ -229,7 +235,10 @@
       <section class="p-10 lg:px-32">
         <article>
           <div>
-            <h2 class="pb-5 text-center text-h2_mobil lg:text-h2_web">
+            <h2
+              itemprop="about"
+              class="pb-5 text-center text-h2_mobil lg:text-h2_web"
+            >
               Bliv en del af line-up
             </h2>
           </div>
@@ -283,13 +292,13 @@
           <article class="lg:px-0">
             <div><h3 class="pb-5 text-center text-h3_mobil">Ansøgning</h3></div>
             <div class="text-brodtekst_mobil lg:text-brodtekst_web">
-              <p>
+              <p itemprop="about">
                 Ansøgningsprocessen er en todelt affære; hvor du først udfylder
                 og indsender en ansøgningsblanket.
               </p>
-              <p>
+              <p itemprop="about">
                 Ansøgningsblanketten skal du sende per mail til Vildskud senest
-                1. april 2022, kl. 18.00.
+                <span itemprop="doorTime">1. april 2022, kl. 18.00.</span>
               </p>
             </div>
             <div class="mx-auto py-5 text-center">
@@ -300,7 +309,10 @@
               </button>
             </div>
             <div class="text-brodtekst_mobil lg:text-brodtekst_web">
-              <p>Send venligst din ansøgning til info@vildskud.dk</p>
+              <p itemprop="about">
+                Send venligst din ansøgning til
+                <span itemprop="email">info@vildskud.dk</span>
+              </p>
               <p class="pt-5">
                 Herefter vil du blive indkaldt til showcases, som ligger i
                 weekenden 21.-23. april 2022.
