@@ -188,9 +188,9 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main>
+    <main class="overflow-x-hidden">
       <!-- ARKIV SEKTION -->
-      <section>
+      <section class="px-10">
         <article>
           <div class="flex justify-center">
             <h1 class="text-h1_mobil">Arkiv</h1>
@@ -206,24 +206,21 @@
       <!-- SLUT SEKTION -->
 
       <!-- Arkiv filtrering -->
-      <section
-        class="flex-col pl-16 lg:mx-auto lg:flex lg:w-[77vh]"
-        x-data="{dato: '2019'}"
-      >
+      <section class="lg:mx-auto" x-data="{dato: '2019'}">
         <article>
           <div>
             <ul class="flex list-none text-h4_mobil lg:text-h4_web">
-              <li class="border-2 p-2">
+              <li class="border-2 p-4">
                 <button x-on:click="dato = '2019'">
                   <span class="text-h2_mobil lg:text-h2_web">2019</span>
                 </button>
               </li>
-              <li class="border-y-2 p-2">
+              <li class="border-y-2 p-4">
                 <button x-on:click="dato = '2020'">
                   <span class="text-h2_mobil lg:text-h2_web">2020</span>
                 </button>
               </li>
-              <li class="border-2 p-2">
+              <li class="border-2 p-4">
                 <button x-on:click="dato = '2021'">
                   <span class="text-h2_mobil lg:text-h2_web">2021</span>
                 </button>
@@ -231,198 +228,81 @@
             </ul>
           </div>
         </article>
-        <!-- 2019 -->
-        <section
-          x-show="dato === '2019'"
-          id="6_aug"
-          class="border-x-2 border-b-2"
-        >
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">
-                  Der er altid en ny dulle på Drunken Flamingo
-                </p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Bare Mig Selv</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Det er en sang der ligner os</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Mænd der elsker mænd</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">First Time</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Sulajmas Drøm</p>
-              </div>
-            </div>
-          </article>
-        </section>
 
-        <!-- 2020  -->
-        <section
-          x-show="dato === '2020'"
-          id="6_aug"
-          class="border-x-2 border-b-2"
-        >
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Hang in there</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Du er mine smukkeste dage</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Knuste hjerter i flødesovs</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Mercedes</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">We are all Charlie</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Ensomhed & Druknedød</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Jeg er god nok</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Bundløs</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Attention</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Smadrekvinde</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-          <article class="border-b-2">
-            <div
-              class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-            >
-              <div>
-                <p class="font-bold">Proprioception – da kroppen blev væk</p>
-              </div>
-            </div>
-          </article>
-          <!-- --------- -->
-        </section>
-
-        <!-- 2021  -->
-        <section>
+        <article class="w-[42.35vh] lg:w-[55.7vh]">
+          <!-- 2019 -->
           <section
-            x-show="dato === '2021'"
+            x-show="dato === '2019'"
+            id="6_aug"
+            class="border-x-2 border-b-2"
+          >
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">
+                    Der er altid en ny dulle på Drunken Flamingo
+                  </p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Bare Mig Selv</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Det er en sang der ligner os</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Mænd der elsker mænd</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">First Time</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Sulajmas Drøm</p>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- 2020  -->
+          <section
+            x-show="dato === '2020'"
             id="6_aug"
             class="border-x-2 border-b-2"
           >
@@ -431,7 +311,7 @@
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
                 <div>
-                  <p class="font-bold">MASKERET</p>
+                  <p class="font-bold">Hang in there</p>
                 </div>
               </div>
             </article>
@@ -441,7 +321,7 @@
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
                 <div>
-                  <p class="font-bold">ALT KØRER, IK</p>
+                  <p class="font-bold">Du er mine smukkeste dage</p>
                 </div>
               </div>
             </article>
@@ -451,7 +331,7 @@
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
                 <div>
-                  <p class="font-bold">ET SURT OPSTØD</p>
+                  <p class="font-bold">Knuste hjerter i flødesovs</p>
                 </div>
               </div>
             </article>
@@ -461,7 +341,7 @@
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
                 <div>
-                  <p class="font-bold">Stå ret, få ret</p>
+                  <p class="font-bold">Mercedes</p>
                 </div>
               </div>
             </article>
@@ -471,15 +351,136 @@
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
                 <div>
-                  <p class="font-bold">Mona Lisa Natten</p>
+                  <p class="font-bold">We are all Charlie</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Ensomhed & Druknedød</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Jeg er god nok</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Bundløs</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Attention</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Smadrekvinde</p>
+                </div>
+              </div>
+            </article>
+            <!-- --------- -->
+            <article class="border-b-2">
+              <div
+                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+              >
+                <div>
+                  <p class="font-bold">Proprioception – da kroppen blev væk</p>
                 </div>
               </div>
             </article>
             <!-- --------- -->
           </section>
-        </section>
+
+          <!-- 2021  -->
+          <section>
+            <section
+              x-show="dato === '2021'"
+              id="6_aug"
+              class="border-x-2 border-b-2"
+            >
+              <article class="border-b-2">
+                <div
+                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <div>
+                    <p class="font-bold">MASKERET</p>
+                  </div>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <div>
+                    <p class="font-bold">ALT KØRER, IK</p>
+                  </div>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <div>
+                    <p class="font-bold">ET SURT OPSTØD</p>
+                  </div>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <div>
+                    <p class="font-bold">Stå ret, få ret</p>
+                  </div>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <div>
+                    <p class="font-bold">Mona Lisa Natten</p>
+                  </div>
+                </div>
+              </article>
+              <!-- --------- -->
+            </section>
+          </section>
+        </article>
       </section>
 
+      <!-- lun på scenekunst? -->
       <section class="p-10 lg:pt-14">
         <article>
           <div

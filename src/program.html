@@ -215,11 +215,11 @@
             <div class="">
               <ul class="flex list-none text-h4_mobil lg:text-h4_web">
                 <!-- tilføjet schema markup -->
-                <li class="border-2 p-4">
-                  <button
-                    itemprop="doorTime"
-                    x-on:click="programdag = 'tirsdag'"
-                  >
+                <li
+                  class="border-2 p-4"
+                  :style="programdag === 'tirsdag' && { backgroundColor: '#92A377' }"
+                >
+                  <button itemprop="doorTime" @click="programdag = 'tirsdag'">
                     <span
                       itemprop="doorTime"
                       class="text-h2_mobil lg:text-h2_web"
@@ -229,7 +229,10 @@
                   </button>
                 </li>
                 <!-- tilføjet schema markup -->
-                <li class="border-y-2 p-4">
+                <li
+                  class="border-y-2 p-4"
+                  :style="programdag === 'onsdag' && { backgroundColor: '#92A377' }"
+                >
                   <button
                     itemprop="doorTime"
                     x-on:click="programdag = 'onsdag'"
@@ -242,17 +245,28 @@
                     aug
                   </button>
                 </li>
-                <li class="border-2 p-4">
+                <li
+                  class="border-2 p-4"
+                  :style="programdag === 'torsdag' && { backgroundColor: '#92A377' }"
+                >
                   <button x-on:click="programdag = 'torsdag'">
                     <span class="text-h2_mobil lg:text-h2_web">4</span> aug
                   </button>
                 </li>
-                <li id="5_aug" class="border-y-2 p-4">
+                <li
+                  id="5_aug"
+                  class="border-y-2 p-4"
+                  :style="programdag === 'fredag' && { backgroundColor: '#92A377' }"
+                >
                   <button x-on:click="programdag = 'fredag'">
                     <span class="text-h2_mobil lg:text-h2_web">5</span> aug
                   </button>
                 </li>
-                <li id="6_aug" class="border-2 p-4">
+                <li
+                  id="6_aug"
+                  class="border-2 p-4"
+                  :style="programdag === 'loerdag' && { backgroundColor: '#92A377' }"
+                >
                   <button x-on:click="programdag = 'loerdag'">
                     <span class="text-h2_mobil lg:text-h2_web">6</span> aug
                   </button>
@@ -266,7 +280,7 @@
             id="6_aug"
             class="border-x-2 border-b-2"
           >
-            <article class="border-b-2">
+            <article class="">
               <div
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
@@ -295,7 +309,7 @@
                 </div>
               </div>
             </article>
-            <article class="border-b-2">
+            <article class="">
               <div
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
