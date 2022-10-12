@@ -361,9 +361,9 @@
         </article>
       </section>
       <!-- COOKIEBOKS -->
-      <!-- <section x-data="{ close: false }">
-        <article class="fixed top-20 z-30">
-          <div class="m-2 border border-solid bg-hvid p-8">
+      <!-- <section x-data="{ cookie: true }">
+        <article x-show="cookie" class="fixed top-20 z-30 lg:left-96 lg:w-1/2">
+          <div class="m-2 border border-solid bg-hvid p-8 lg:p-10">
             <div class="">
               <p class="mb-5 text-h4_mobil font-bold">
                 Du bestemmer over dine data
@@ -384,16 +384,21 @@
                 nederst på siden.
               </p>
             </div>
-            <div class="mt-5 flex justify-evenly">
+            <div class="mt-5 flex justify-evenly lg:mt-20">
               <div
-                class="w-36 border-2 border-solid border-[#a1a0a0] bg-[#b9b8b8] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#a1a0a0]"
+                class="w-28 border-2 border-solid border-sort bg-[#b9b8b8] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#a1a0a0]"
               >
-                <button x-on:click="close">Afvis</button>
+                <button x-on:click="cookie = ''">Afvis</button>
               </div>
               <div
-                class="w-36 border-2 border-solid border-[#2db15f] bg-[#46d07b] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#2db15f]"
+                class="w-28 border-2 border-solid border-[#2db15f] bg-[#46d07b] p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#2db15f]"
               >
-                <button x-on:click="close">Accepter</button>
+                <button x-on:click="cookie = ''">Accepter</button>
+              </div>
+              <div
+                class="w-28 border-2 border-solid border-sort bg-hvid p-2 text-center text-h4_mobil hover:cursor-pointer hover:bg-[#eae9e9]"
+              >
+                <button x-on:click="cookie = ''">Læs mere</button>
               </div>
             </div>
           </div>
