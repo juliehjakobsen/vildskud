@@ -188,7 +188,13 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main class="pt-7">
+
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/frivillig.html"
+      class="pt-7"
+    >
       <!-- VÆR MED NAVIGATION -->
       <section>
         <div class="text-center">
@@ -227,7 +233,10 @@
       <section class="px-10 lg:px-32">
         <article class="my-10">
           <div>
-            <h2 class="text-center text-h2_mobil lg:text-h2_web">
+            <h2
+              itemprop="about"
+              class="text-center text-h2_mobil lg:text-h2_web"
+            >
               Bliv Arrangør
             </h2>
           </div>
@@ -247,11 +256,12 @@
               Vi giver dig kunstnerisk frihed til at danne rammerne for
               festivalens visuelle udtryk!
             </p>
-            <p class="lg:col-start-2 lg:row-start-1">
+            <!-- tilføjet schema markup -->
+            <p itemprop="about" class="lg:col-start-2 lg:row-start-1">
               Du bliver en del af et stærkt kunstnerisk team, som brænder for
               scenekunsten og festivalen.
             </p>
-            <p class="lg:col-start-2 lg:row-start-2">
+            <p itemprop="about" class="lg:col-start-2 lg:row-start-2">
               Arrangørgruppen arbejder med en flad struktur og er altid åben for
               at få flere med. Sammensætningen af gruppen forandrer sig fra år
               til år og derfor forandrer måden hvorpå arbejdet med festivalen
@@ -311,8 +321,9 @@
                   Ønsker du at være en del af arrangørgruppen til Vildskud
                   Festival 2020?
                 </p>
-                <p>Så send en motiveret ansøgning til:</p>
-                <p class="italic">info@vildskud.dk</p>
+                <!-- tilføjet scema markup -->
+                <p itemprop="about">Så send en motiveret ansøgning til:</p>
+                <p itemprop="email" class="italic">info@vildskud.dk</p>
                 <p>
                   Vi tager imod ansøgninger hele året, så tøv ikke med at
                   kontakte os.
