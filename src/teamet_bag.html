@@ -189,7 +189,11 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main>
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/line_up.html"
+    >
       <!-- START SEKTION -->
       <section class="pb-10">
         <article>
@@ -198,8 +202,10 @@
               Teamet Bag
             </h1>
           </div>
+          <!-- tilføjet schema markup -->
           <div>
             <p
+              itemprop="about"
               class="px-10 text-brodtekst_mobil lg:flex lg:justify-center lg:text-brodtekst_web"
             >
               Det er et stort arbejde at planlægge og afvikle en festival. Så
@@ -214,10 +220,13 @@
         <article>
           <!-- navn + titel -->
           <div>
-            <h3 class="text-h3_mobil text-orange lg:text-h3_web">
+            <h3
+              itemprop="director"
+              class="text-h3_mobil text-orange lg:text-h3_web"
+            >
               Nikita Fernando
             </h3>
-            <h4 class="text-h4_mobil lg:text-h4_web">
+            <h4 itemprop="about" class="text-h4_mobil lg:text-h4_web">
               Projektleder og gruppeansvarlig
             </h4>
           </div>
@@ -225,8 +234,8 @@
           <div
             class="pt-3 text-brodtekst_mobil italic underline lg:text-brodtekst_web"
           >
-            <p>info@vildskud.dk</p>
-            <p>grupper@vildskud.dk</p>
+            <p itemprop="email">info@vildskud.dk</p>
+            <p itemprop="email">grupper@vildskud.dk</p>
           </div>
         </article>
         <!-- MEDARBEJDER 2 -->
