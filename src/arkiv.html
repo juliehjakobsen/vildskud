@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vildskud Festival for Scenekunst</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="border-black border-b">
       <nav class="navbar p-2">
         <!-- HEADER NAVIGATION MOBIL START -->
@@ -165,294 +165,688 @@
     </header>
     <main class="overflow-x-hidden">
       <!-- ARKIV SEKTION -->
-      <section class="px-10">
-        <article>
-          <div class="flex justify-center">
-            <h1 class="text-h1_mobil">Arkiv</h1>
-          </div>
-          <div class="flex justify-center text-center">
-            <h2 class="text-h2_mobil">
-              Se <span class="text-orange">arkivet</span> for tidligere års
-              forestillinger herunder
-            </h2>
-          </div>
-        </article>
-      </section>
-      <!-- SLUT SEKTION -->
+      <section class="grid flex-col place-content-center lg:mx-auto lg:flex">
+        <section class="px-10">
+          <article>
+            <div class="flex justify-center">
+              <h1 class="text-h1_mobil">Arkiv</h1>
+            </div>
+            <div class="flex justify-center text-center lg:pb-5">
+              <h2 class="text-h2_mobil">
+                Se <span class="text-orange">arkivet</span> for tidligere års
+                forestillinger herunder
+              </h2>
+            </div>
+          </article>
+        </section>
+        <!-- SLUT SEKTION -->
 
-      <!-- Arkiv filtrering -->
-      <section class="lg:mx-auto" x-data="{dato: '2019'}">
-        <article>
-          <div>
-            <ul class="flex list-none text-h4_mobil lg:text-h4_web">
-              <li class="border-2 p-4">
-                <button x-on:click="dato = '2019'">
-                  <span class="text-h2_mobil lg:text-h2_web">2019</span>
-                </button>
-              </li>
-              <li class="border-y-2 p-4">
-                <button x-on:click="dato = '2020'">
-                  <span class="text-h2_mobil lg:text-h2_web">2020</span>
-                </button>
-              </li>
-              <li class="border-2 p-4">
-                <button x-on:click="dato = '2021'">
-                  <span class="text-h2_mobil lg:text-h2_web">2021</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </article>
+        <!-- Arkiv filtrering -->
+        <section class="mx-auto lg:mx-auto" x-data="{dato: '2020'}">
+          <article>
+            <div>
+              <ul class="flex list-none text-h4_mobil lg:text-h4_web">
+                <li
+                  class="border-2 p-4"
+                  :style="dato === '2019' && { backgroundColor: '#92A377' }"
+                >
+                  <button x-on:click="dato = '2019'">
+                    <span class="text-h2_mobil lg:text-h2_web">2019</span>
+                  </button>
+                </li>
+                <li
+                  class="border-y-2 p-4"
+                  :style="dato === '2020' && { backgroundColor: '#92A377' }"
+                >
+                  <button x-on:click="dato = '2020'">
+                    <span class="text-h2_mobil lg:text-h2_web">2020</span>
+                  </button>
+                </li>
+                <li
+                  class="border-2 p-4"
+                  :style="dato === '2021' && { backgroundColor: '#92A377' }"
+                >
+                  <button x-on:click="dato = '2021'">
+                    <span class="text-h2_mobil lg:text-h2_web">2021</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </article>
 
-        <article class="w-[42.35vh] lg:w-[55.7vh]">
-          <!-- 2019 -->
-          <section
-            x-show="dato === '2019'"
-            id="6_aug"
-            class="border-x-2 border-b-2"
-          >
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">
+          <article class="w-[42.35vh] lg:w-[55.7vh]">
+            <!-- 2019 -->
+            <section
+              x-show="dato === '2019'"
+              id="6_aug"
+              class="border-x-2 border-b-2"
+            >
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold hover:underline">
                     Der er altid en ny dulle på Drunken Flamingo
                   </p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/der-er-altid-en-ny-dulle-paa-drunken-flamingo/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
                   <p class="font-bold">Bare Mig Selv</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/bare-mig-selv/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
                   <p class="font-bold">Det er en sang der ligner os</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/det-er-en-sang-der-ligner-os/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
                   <p class="font-bold">Mænd der elsker mænd</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/maend-der-elsker-maend/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
                   <p class="font-bold">First Time</p>
+                  <a href="https://www.vildskud.dk/forestillinger/first-time/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
                   <p class="font-bold">Sulajmas Drøm</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/sulajmas-droem/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
-              </div>
-            </article>
-          </section>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">The Impeccable Mr. Happy</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/the-impeccable-mr-happy/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">i'm in love with my plants</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/woo-collective/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">ER DU BLEVET ANDERLEDES</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/er-du-blevet-anderledes/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Træk et Nummer</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/traek-et-nummer/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Smadreland</p>
+                  <a href="https://www.vildskud.dk/forestillinger/smadreland/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Den Sidste Nadver</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/den-sidste-nadver/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Cæsar eller Demokrati</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/caesar-eller-demokrati/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Det man siger, er man selv</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/det-man-siger-er-man-selv/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Mig og min Menstruationskop</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/mig-og-min-menstruationskop/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Glorias Garden (En haves funktion)</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/glorias-garden-2/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Et stykke af mig</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/et-stykke-af-mig/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </section>
 
-          <!-- 2020  -->
-          <section
-            x-show="dato === '2020'"
-            id="6_aug"
-            class="border-x-2 border-b-2"
-          >
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Hang in there</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Du er mine smukkeste dage</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Knuste hjerter i flødesovs</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Mercedes</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">We are all Charlie</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Ensomhed & Druknedød</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Jeg er god nok</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Bundløs</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Attention</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Smadrekvinde</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-            <article class="border-b-2">
-              <div
-                class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
-              >
-                <div>
-                  <p class="font-bold">Proprioception – da kroppen blev væk</p>
-                </div>
-              </div>
-            </article>
-            <!-- --------- -->
-          </section>
-
-          <!-- 2021  -->
-          <section>
+            <!-- 2020  -->
             <section
-              x-show="dato === '2021'"
+              x-show="dato === '2020'"
               id="6_aug"
               class="border-x-2 border-b-2"
             >
               <article class="border-b-2">
                 <div
-                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
                 >
-                  <div>
-                    <p class="font-bold">MASKERET</p>
-                  </div>
+                  <p class="font-bold">Hang in there</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/hang-in-there/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </article>
               <!-- --------- -->
               <article class="border-b-2">
                 <div
-                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
                 >
-                  <div>
-                    <p class="font-bold">ALT KØRER, IK</p>
-                  </div>
+                  <p class="font-bold">Du er mine smukkeste dage</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/du-er-mine-smukkeste-dage/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </article>
               <!-- --------- -->
               <article class="border-b-2">
                 <div
-                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
                 >
-                  <div>
-                    <p class="font-bold">ET SURT OPSTØD</p>
-                  </div>
+                  <p class="font-bold">Knuste hjerter i flødesovs</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/knuste-hjerter-i-floedesovs/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </article>
               <!-- --------- -->
               <article class="border-b-2">
                 <div
-                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
                 >
-                  <div>
-                    <p class="font-bold">Stå ret, få ret</p>
-                  </div>
+                  <p class="font-bold">Mercedes</p>
+                  <a href="https://www.vildskud.dk/forestillinger/mercedes//"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </article>
               <!-- --------- -->
               <article class="border-b-2">
                 <div
-                  class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
                 >
-                  <div>
-                    <p class="font-bold">Mona Lisa Natten</p>
-                  </div>
+                  <p class="font-bold">We are all Charlie</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/we-are-all-charlie/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </article>
               <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Ensomhed & Druknedød</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/ensomhed-og-druknedoed/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Jeg er god nok</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/jeg-er-god-nok/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Bundløs</p>
+                  <a href="https://www.vildskud.dk/forestillinger/bundloes/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Attention</p>
+                  <a href="https://www.vildskud.dk/forestillinger/attention/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Smadrekvinde</p>
+                  <a href="https://www.vildskud.dk/forestillinger/smadrekvinde/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-2">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Proprioception – da kroppen blev væk</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/proprioception-da-kroppen-blev-vaek/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- -->
+              <article class="border-b-">
+                <div
+                  class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                >
+                  <p class="font-bold">Vind mit hjerte</p>
+                  <a
+                    href="https://www.vildskud.dk/forestillinger/vind-mit-hjerte/"
+                    ><svg width="32" height="32" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
             </section>
-          </section>
-        </article>
+
+            <!-- 2021  -->
+            <section>
+              <section
+                x-show="dato === '2021'"
+                id="6_aug"
+                class="border-x-2 border-b-2"
+              >
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">MASKERET</p>
+                    <a href="https://www.vildskud.dk/forestillinger/maskeret/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">ALT KØRER, IK</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/alt-koerer-ik/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">ET SURT OPSTØD</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/et-surt-opstoed/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">Stå ret, få ret</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/staa-ret-faa-ret/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">Mona Lisa Natten</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/mona-lisa-natten/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">WISH</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/hvem-har-inviteret-odile/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+                <!-- --------- -->
+                <article class="border-b-2">
+                  <div
+                    class="flex justify-between gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
+                  >
+                    <p class="font-bold">SKAMMER DU DIG NU?</p>
+                    <a
+                      href="https://www.vildskud.dk/forestillinger/skammer-du-dig-nu/"
+                      ><svg width="32" height="32" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </section>
+            </section>
+          </article>
+        </section>
       </section>
 
       <!-- lun på scenekunst? -->
