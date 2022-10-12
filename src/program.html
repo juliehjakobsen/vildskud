@@ -188,7 +188,12 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main class="overflow-x-clip px-10 pt-7 lg:px-32">
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/program.html"
+      class="overflow-x-clip px-10 pt-7 lg:px-32"
+    >
       <!-- PROGRAM SEKTION -->
       <section>
         <article class="">
@@ -209,14 +214,32 @@
           <article>
             <div class="">
               <ul class="flex list-none text-h4_mobil lg:text-h4_web">
+                <!-- tilføjet schema markup -->
                 <li class="border-2 p-4">
-                  <button x-on:click="programdag = 'tirsdag'">
-                    <span class="text-h2_mobil lg:text-h2_web">2</span> aug
+                  <button
+                    itemprop="doorTime"
+                    x-on:click="programdag = 'tirsdag'"
+                  >
+                    <span
+                      itemprop="doorTime"
+                      class="text-h2_mobil lg:text-h2_web"
+                      >2</span
+                    >
+                    aug
                   </button>
                 </li>
+                <!-- tilføjet schema markup -->
                 <li class="border-y-2 p-4">
-                  <button x-on:click="programdag = 'onsdag'">
-                    <span class="text-h2_mobil lg:text-h2_web">3</span> aug
+                  <button
+                    itemprop="doorTime"
+                    x-on:click="programdag = 'onsdag'"
+                  >
+                    <span
+                      itemprop="doorTime"
+                      class="text-h2_mobil lg:text-h2_web"
+                      >3</span
+                    >
+                    aug
                   </button>
                 </li>
                 <li class="border-2 p-4">
@@ -237,38 +260,38 @@
               </ul>
             </div>
           </article>
-          <!-- Dato: 2. august  -->
+          <!-- Dato: 2. august - tilføjet schema markup -->
           <section
             x-show="programdag === 'tirsdag'"
             id="6_aug"
-            class="w-[48vh] border-x-2 border-b-2 lg:w-[70.3vh]"
+            class="border-x-2 border-b-2"
           >
             <article class="border-b-2">
               <div
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
-                <p>18.30</p>
+                <p itemprop="doorTime">18.30</p>
                 <div>
-                  <p class="font-bold">VILD MED DIG</p>
-                  <p>Teaterhuset | Xenon</p>
+                  <p itemprop="actor" class="font-bold">VILD MED DIG</p>
+                  <p itemprop="location">Teaterhuset | Xenon</p>
                 </div>
               </div>
             </article>
           </section>
-          <!-- Dato: 3. august  -->
+          <!-- Dato: 3. august - tilføjet schema markup -->
           <section
             x-show="programdag === 'onsdag'"
             id="6_aug"
-            class="w-[48vh] border-x-2 border-b-2 lg:w-[70.3vh]"
+            class="border-x-2 border-b-2"
           >
             <article class="border-b-2">
               <div
                 class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
               >
-                <p>16.15</p>
+                <p itemprop="doorTime">16.15</p>
                 <div>
-                  <p class="font-bold">VILD MED DIG</p>
-                  <p>Teaterhuset | Xenon</p>
+                  <p itemprop="actor" class="font-bold">VILD MED DIG</p>
+                  <p itemprop="location">Teaterhuset | Xenon</p>
                 </div>
               </div>
             </article>
@@ -289,7 +312,7 @@
             <section
               x-show="programdag === 'torsdag'"
               id="6_aug"
-              class="w-[48vh] border-x-2 border-b-2 lg:w-[70.3vh]"
+              class="border-x-2 border-b-2"
             >
               <article class="border-b-2">
                 <div
@@ -363,7 +386,7 @@
             <section
               x-show="programdag === 'fredag'"
               id="5_aug"
-              class="w-[48vh] border-x-2 border-b-2 lg:w-[70.3vh]"
+              class="border-x-2 border-b-2"
             >
               <article class="border-b-2">
                 <div
@@ -436,7 +459,7 @@
             <section
               x-show="programdag === 'loerdag'"
               id="6_aug"
-              class="w-[48vh] border-x-2 border-b-2 lg:w-[70.3vh]"
+              class="border-x-2 border-b-2"
             >
               <article class="border-b-2">
                 <div
@@ -508,35 +531,38 @@
           </section>
         </section>
       </section>
-      <!-- EVENTS SEKTION -->
+      <!-- EVENTS SEKTION - tilføjet schema markup -->
       <section class="my-10">
         <article>
           <div>
-            <h2 class="text-center text-h2_mobil lg:text-h2_web">
-              2022 <span class="text-orange">Events</span>
+            <h2
+              itemprop="doorTime"
+              class="text-center text-h2_mobil lg:text-h2_web"
+            >
+              2022 <span itemprop="doorTime" class="text-orange">Events</span>
             </h2>
           </div>
           <div class="grid grid-cols-2 lg:py-10 lg:px-20">
             <div
               class="col-start-1 row-start-1 text-brodtekst_mobil lg:text-h3_mobil"
             >
-              <p class="font-bold">Scenekunst om tabu</p>
-              <p>16:30 - 17:30</p>
-              <p>Ukirken</p>
+              <p itemprop="actor" class="font-bold">Scenekunst om tabu</p>
+              <p itemprop="doorTime">16:30 - 17:30</p>
+              <p itemprop="location">Ukirken</p>
             </div>
             <div
               class="col-start-2 row-start-2 text-right text-brodtekst_mobil lg:text-h3_mobil"
             >
-              <p class="font-bold">Ny dansk dramatik</p>
-              <p>16:30 - 17:30</p>
-              <p>Ukirken</p>
+              <p itemprop="actor" class="font-bold">Ny dansk dramatik</p>
+              <p itemprop="doorTime">16:30 - 17:30</p>
+              <p itemprop="location">Ukirken</p>
             </div>
             <div
               class="col-start-1 row-start-3 text-brodtekst_mobil lg:text-h3_mobil"
             >
-              <p class="font-bold">Fremtidens Scenekunst</p>
-              <p>16:30 - 17:30</p>
-              <p>Ukirken</p>
+              <p itemprop="actor" class="font-bold">Fremtidens Scenekunst</p>
+              <p itemprop="doorTime">16:30 - 17:30</p>
+              <p itemprop="location">Ukirken</p>
             </div>
           </div>
         </article>
@@ -561,11 +587,14 @@
     <!-- FOOTER -->
     <footer class="">
       <hr class="text-sort" />
-      <div class="grid grid-cols-2 gap-10 p-5 lg:mx-auto lg:w-2/3 lg:pl-48">
-        <div class="">
-          <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
-            VILDSKUD
-          </h4>
+      <div class="grid grid-cols-2 gap-10 p-5">
+        <div class="lg:mx-auto">
+          <a href="index.html"
+            ><h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
+              VILDSKUD
+            </h4></a
+          >
+
           <p class="text-footer_mobil lg:text-brodtekst_mobil">
             Vildskud er Københavns største og eneste scenekunstfestival.
           </p>
@@ -574,44 +603,34 @@
           </p>
         </div>
 
-        <div class="">
+        <div class="lg:mx-auto">
           <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
             VI ELSKER BÆREDYGTIGHED
           </h4>
           <p class="text-footer_mobil lg:text-brodtekst_mobil">
-            Hos Vildskud gør vi meget for ikke at belaste vores jord. Vi ønsker
-            ikke at udlede mere CO2 end nødvendigt!
+            Hos Vildskud gør vi meget for ikke at belaste vores jord.
+          </p>
+          <p class="text-footer_mobil lg:text-brodtekst_mobil">
+            Vi ønsker ikke at udlede mere CO2 end nødvendigt!
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-5 pb-5 text-center lg:relative lg:pb-10">
-        <a href="index.html">
-          <img
-            class="h-1/12 mx-auto w-1/2 lg:absolute lg:left-32 lg:-top-32 lg:w-1/12"
-            src="Vildskud_logo_mobil.svg"
-            alt=""
-        /></a>
-        <a class="mx-auto w-5/12 pt-2 lg:w-2/12" href="">
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"
-            />
-          </svg>
-        </a>
-        <a class="mx-auto w-5/12 pt-2 lg:w-2/12" href="">
-          <svg viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
-            />
-          </svg>
-        </a>
-        <a class="pt-4 text-h4_mobil lg:text-h3_mobil" href="kontakt.html"
+      <div class="grid grid-cols-4 p-5 text-center lg:relative lg:pb-10">
+        <a class="text-brodtekst_mobil underline lg:text-h3_mobil" href=""
+          >Facebook</a
+        >
+        <a class="text-brodtekst_mobil underline lg:text-h3_mobil" href=""
+          >Instagram</a
+        >
+        <a
+          class="pl-5 text-brodtekst_mobil underline lg:text-h3_mobil"
+          href="kontakt.html"
           >FAQ</a
         >
-        <a class="pt-4 text-h4_mobil lg:text-h3_mobil" href="kontakt.html"
+        <a
+          class="pr-5 text-brodtekst_mobil underline lg:pr-0 lg:text-h3_mobil"
+          href="kontakt.html"
           >Kontakt</a
         >
       </div>
