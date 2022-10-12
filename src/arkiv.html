@@ -243,7 +243,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">
+                <p class="font-bold">
                   Der er altid en ny dulle på Drunken Flamingo
                 </p>
               </div>
@@ -255,7 +255,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">Bare Mig Selv</p>
+                <p class="font-bold">Bare Mig Selv</p>
               </div>
             </div>
           </article>
@@ -265,9 +265,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">
-                  Det er en sang der ligner os
-                </p>
+                <p class="font-bold">Det er en sang der ligner os</p>
               </div>
             </div>
           </article>
@@ -277,9 +275,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">
-                  Mænd der elsker mænd
-                </p>
+                <p class="font-bold">Mænd der elsker mænd</p>
               </div>
             </div>
           </article>
@@ -289,7 +285,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">First Time</p>
+                <p class="font-bold">First Time</p>
               </div>
             </div>
           </article>
@@ -299,7 +295,7 @@
               class="flex gap-10 bg-graagron p-3 text-brodtekst_mobil lg:text-brodtekst_web"
             >
               <div>
-                <p class="text-brodtekst_mobil font-bold">Sulajmas Drøm</p>
+                <p class="font-bold">Sulajmas Drøm</p>
               </div>
             </div>
           </article>
@@ -484,9 +480,11 @@
         </section>
       </section>
 
-      <section class="p-10">
+      <section class="p-10 lg:pt-14">
         <article>
-          <div class="text-brodtekst_mobil">
+          <div
+            class="text-brodtekst_mobil lg:mx-auto lg:w-1/2 lg:text-brodtekst_web"
+          >
             <p>
               Er du lun på scenekunst? Tør du stå foran et publikum og fortælle
               din sandhed? Så er Vildskud noget for dig!
@@ -497,11 +495,13 @@
               Københavns største scenekunstfestival til livs.
             </p>
           </div>
-          <div class="flex justify-center pt-5">
+          <div class="lg:flex lg:justify-center">
             <button
-              class="rounded-sm border-2 border-morkegron p-2 text-brodtekst_mobil text-morkegron"
+              class="mt-5 w-80 rounded-sm border-2 text-morkegron hover:bg-morkegron hover:text-hvid"
             >
-              <a href="line_up.html">Tilmeld dig til line-up 2023 her</a>
+              <a class="text-h4_mobil" href="arkiv.html"
+                >Tilmeld dig til line-up 2023 her</a
+              >
             </button>
           </div>
         </article>
@@ -510,11 +510,14 @@
     <!-- FOOTER -->
     <footer class="">
       <hr class="text-sort" />
-      <div class="grid grid-cols-2 gap-10 p-5 lg:mx-auto lg:w-2/3 lg:pl-48">
-        <div class="">
-          <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
-            VILDSKUD
-          </h4>
+      <div class="grid grid-cols-2 gap-10 p-5">
+        <div class="lg:mx-auto">
+          <a href="index.html"
+            ><h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
+              VILDSKUD
+            </h4></a
+          >
+
           <p class="text-footer_mobil lg:text-brodtekst_mobil">
             Vildskud er Københavns største og eneste scenekunstfestival.
           </p>
@@ -523,31 +526,33 @@
           </p>
         </div>
 
-        <div class="">
+        <div class="lg:mx-auto">
           <h4 class="text-brodtekst_web font-bold lg:text-h3_mobil">
             VI ELSKER BÆREDYGTIGHED
           </h4>
           <p class="text-footer_mobil lg:text-brodtekst_mobil">
-            Hos Vildskud gør vi meget for ikke at belaste vores jord. Vi ønsker
-            ikke at udlede mere CO2 end nødvendigt!
+            Hos Vildskud gør vi meget for ikke at belaste vores jord.
+          </p>
+          <p class="text-footer_mobil lg:text-brodtekst_mobil">
+            Vi ønsker ikke at udlede mere CO2 end nødvendigt!
           </p>
         </div>
       </div>
 
-      <div class="grid grid-cols-4 pb-5 text-center lg:relative lg:pb-10">
-        <a class="pt-4 text-brodtekst_mobil underline lg:text-h3_mobil" href=""
+      <div class="grid grid-cols-4 p-5 text-center lg:relative lg:pb-10">
+        <a class="text-brodtekst_mobil underline lg:text-h3_mobil" href=""
           >Facebook</a
         >
-        <a class="pt-4 text-brodtekst_mobil underline lg:text-h3_mobil" href=""
+        <a class="text-brodtekst_mobil underline lg:text-h3_mobil" href=""
           >Instagram</a
         >
         <a
-          class="pt-4 pl-5 text-brodtekst_mobil underline lg:text-h3_mobil"
+          class="pl-5 text-brodtekst_mobil underline lg:text-h3_mobil"
           href="kontakt.html"
           >FAQ</a
         >
         <a
-          class="pt-4 pr-5 text-brodtekst_mobil underline lg:text-h3_mobil"
+          class="pr-5 text-brodtekst_mobil underline lg:pr-0 lg:text-h3_mobil"
           href="kontakt.html"
           >Kontakt</a
         >
