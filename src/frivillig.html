@@ -189,7 +189,12 @@
       </nav>
     </header>
 
-    <main class="pt-7">
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/frivillig.html"
+      class="pt-7"
+    >
       <!-- VÆR MED NAVIGATION -->
       <section>
         <div class="text-center">
@@ -229,7 +234,10 @@
         <article>
           <div>
             <div>
-              <h2 class="text-center text-h2_mobil lg:text-h2_web">
+              <h2
+                itemprop="attendee"
+                class="text-center text-h2_mobil lg:text-h2_web"
+              >
                 Bliv Frivillig
               </h2>
             </div>
@@ -270,19 +278,31 @@
       <section class="relative bg-graagron p-10 lg:mx-auto lg:w-1/2 lg:px-32">
         <article>
           <div>
-            <h3 class="text-center text-h3_mobil lg:text-h3_web">
-              Kort <span class="text-orange">Info</span>
+            <h3
+              itemprop="about"
+              class="text-center text-h3_mobil lg:text-h3_web"
+            >
+              Kort <span itemprop="about" class="text-orange">Info</span>
             </h3>
           </div>
           <div>
-            <p class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web">
+            <p
+              itemprop="about"
+              class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
               Jobbet som frivillig består af 2 vagter på 3-4 timer. Der er et
               infomøde d. 1. august 2022.
             </p>
-            <p class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web">
+            <p
+              itemprop="about"
+              class="pb-3 text-brodtekst_mobil lg:text-brodtekst_web"
+            >
               Vil du være frivillig, eller har du spørgsmål så skriv til:
             </p>
-            <p class="text-brodtekst_mobil italic lg:text-brodtekst_web">
+            <p
+              itemprop="about"
+              class="text-brodtekst_mobil italic lg:text-brodtekst_web"
+            >
               frivillig@vildskud.dk
             </p>
           </div>
