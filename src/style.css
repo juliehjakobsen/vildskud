@@ -18,9 +18,11 @@
   a,
   label {
     font-family: bebas;
+    
   }
   @font-face {
     font-family: bebas;
     src: url(font/bebasneue-regular.woff);
   }
 }
+
