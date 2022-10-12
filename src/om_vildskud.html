@@ -188,9 +188,17 @@
         <!-- HEADER NAVIGATION DESKTOP SLUT -->
       </nav>
     </header>
-    <main>
+
+    <!-- itemscope er tilføjet fordi der er tilføjet itemprop længere nede -->
+    <main
+      Itemscope
+      itemtype="https://juliehjakobsen.github.io/vildskud/line_up.html"
+    >
       <div class="pb-3 text-center">
-        <h1 class="text-h1_mobil lg:text-h1_web">Om Vildskud</h1>
+        <!-- tilføjet schema markup -->
+        <h1 itemprop="about" class="text-h1_mobil lg:text-h1_web">
+          Om Vildskud
+        </h1>
       </div>
 
       <!-- VORES MÅL SEKTION -->
@@ -211,12 +219,16 @@
           </div>
           <!-- Lille Illustration slut -->
           <div class="pb-10 lg:grid lg:grid-cols-2 lg:gap-20">
-            <p class="pb text-brodtekst_mobil lg:text-brodtekst_web">
+            <!-- tilføjet schema markup -->
+            <p
+              itemprop="about"
+              class="pb text-brodtekst_mobil lg:text-brodtekst_web"
+            >
               Vildskuds mål er at give undergrunden i dansk scenekunst en
               platform med mulighed for at møde et bredt publikum, og på den
               måde skabe synlighed for vækstlaget.
             </p>
-            <p class="lg:text-brodtekst_web">
+            <p itemprop="about" class="lg:text-brodtekst_web">
               Desuden kan de deltagende scenekunstgrupper også møde hinanden på
               tværs af genrer og arbejdsmetoder, med henblik på gensidig
               udvikling og læring.
