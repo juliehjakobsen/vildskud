@@ -8,19 +8,16 @@
   </head>
   <body class="overflow-x-hidden">
     <header class="border-black border-b">
-      <nav class="navbar justify-between">
+      <nav class="navbar p-2">
         <!-- HEADER NAVIGATION MOBIL START -->
-        <div class="pl-5 lg:hidden">
+        <div class="lg:hidden">
           <a href="index.html">
             <img class="w-7" src="Vildskud_logo_mobil.svg" alt=""
           /></a>
         </div>
-        <div class="absolute right-5">
+        <div class="w-full justify-end gap-2 lg:hidden">
           <div class="dropdown">
-            <label
-              tabindex="0"
-              class="btn btn-ghost hover:bg-transparent lg:hidden"
-            >
+            <label tabindex="0" class="hover:bg-transparent lg:hidden">
               <svg width="32" height="32" viewBox="0 0 512 512">
                 <path
                   d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"
@@ -31,12 +28,10 @@
 
             <ul
               tabindex="0"
-              class="border-black bg-white dropdown-content menu menu-compact absolute -left-80 top-14 w-[62vh] border-y border-solid bg-hvid p-5"
+              class="border-black dropdown-content menu menu-compact absolute -left-[51vh] w-[61.88vh] border-y border-solid bg-hvid p-5"
             >
               <li>
-                <a
-                  class="justify-between py-7 text-h4_mobil"
-                  href="program.html"
+                <a class="justify-between text-h4_mobil" href="program.html"
                   >Program</a
                 >
               </li>
@@ -51,7 +46,7 @@
                       /></svg></span
                 ></a>
 
-                <ul class="relative left-0 bg-beige shadow-inner">
+                <ul class="relative left-0 bg-baggrund shadow-inner">
                   <li>
                     <a class="text-brodtekst_web" href="frivillig.html"
                       >Bliv Frivillig</a
@@ -95,30 +90,22 @@
           </div>
         </div>
         <!-- HEADER NAVIGATION MOBIL SLUT -->
-        <!-- HEADER NAVIGATION DESKTOP -->
-        <div class="absolute left-5 hidden pl-10 lg:block">
+        <!-- HEADER NAVIGATION DESKTOP START -->
+        <div class="hidden p-2 lg:block">
           <a href="index.html">
-            <img class="w-32" src="Vildskud_logo.svg" alt=""
+            <img class="w-56" src="Vildskud_logo.svg" alt=""
           /></a>
         </div>
-        <div class="absolute right-5 pr-10">
-          <div class="navbar-center hidden lg:flex">
-            <ul
-              tabindex="0"
-              class="bg-white menu menu-horizontal z-10 flex gap-10 p-5"
-            >
+        <div class="w-full justify-end">
+          <div class="hidden lg:flex">
+            <ul tabindex="0" class="menu menu-horizontal z-10 flex gap-10 p-5">
               <li>
-                <a
-                  class="justify-between focus:bg-hvid focus:text-sort lg:text-h4_mobil"
-                  href="program.html"
+                <a class="focus:text-sort lg:text-h4_mobil" href="program.html"
                   >Program</a
                 >
               </li>
               <li>
-                <a
-                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
-                  tabindex="0"
-                  href=""
+                <a class="lg:text-h4_mobil" tabindex="0" href=""
                   >Vær Med
                   <span class=""
                     ><svg class="" width="20" height="20" viewBox="0 0 24 24">
@@ -128,25 +115,21 @@
                       /></svg></span
                 ></a>
 
-                <ul class="border-black border bg-hvid shadow-inner">
-                  <li>
-                    <a
-                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
-                      href="frivillig.html"
+                <ul
+                  class="border-black flex w-60 gap-5 border bg-hvid shadow-inner"
+                >
+                  <li class="p-5 hover:bg-graagron">
+                    <a class="text-brodtekst_web" href="frivillig.html"
                       >Bliv Frivillig</a
                     >
                   </li>
-                  <li>
-                    <a
-                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
-                      href="arrangoer.html"
+                  <li class="p-5 hover:bg-graagron">
+                    <a class="text-brodtekst_web" href="arrangoer.html"
                       >Bliv Arrangør</a
                     >
                   </li>
-                  <li>
-                    <a
-                      class="text-brodtekst_web focus:bg-hvid focus:text-sort"
-                      href="line_up.html"
+                  <li class="p-5 hover:bg-graagron">
+                    <a class="text-brodtekst_web" href="line_up.html"
                       >Bliv en del af Line-up</a
                     >
                   </li>
@@ -154,25 +137,17 @@
               </li>
 
               <li>
-                <a
-                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
-                  href="om_vildskud.html"
+                <a class="lg:text-h4_mobil" href="om_vildskud.html"
                   >Om Vildskud</a
                 >
               </li>
               <li>
-                <a
-                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
-                  href="teamet_bag.html"
+                <a class="lg:text-h4_mobil" href="teamet_bag.html"
                   >Teamet bag</a
                 >
               </li>
               <li>
-                <a
-                  class="focus:bg-hvid focus:text-sort lg:text-h4_mobil"
-                  href="kontakt.html"
-                  >Kontakt</a
-                >
+                <a class="lg:text-h4_mobil" href="kontakt.html">Kontakt</a>
               </li>
             </ul>
           </div>
